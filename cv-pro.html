@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profissional - Carlos Costato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --linkedin-blue: #0077b5;
+            --text-dark: #333;
+            --text-gray: #666;
+            --bg-white: #ffffff;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f2ef;
+            margin: 0;
+            padding: 40px;
+            color: var(--text-dark);
+        }
+        .cv-page {
+            background: var(--bg-white);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 40px;
+        }
+        .left-col {
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+        .right-col {
+            padding-left: 10px;
+        }
+        h1 { margin: 0; font-size: 28px; color: black; }
+        .title { color: var(--text-gray); font-size: 16px; margin-top: 5px; font-weight: 500; }
+        .section-title {
+            color: var(--linkedin-blue);
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        .contact-info p { font-size: 13px; margin: 5px 0; color: var(--text-gray); }
+        .summary p { font-size: 14px; line-height: 1.6; color: var(--text-dark); }
+        .exp-item { margin-bottom: 25px; }
+        .exp-item h3 { font-size: 16px; margin: 0; color: black; }
+        .exp-company { font-weight: 500; color: var(--text-gray); font-size: 14px; margin: 3px 0; }
+        .exp-date { font-size: 13px; color: #999; margin-bottom: 8px; display: block; }
+        .exp-desc { font-size: 13.5px; line-height: 1.5; color: var(--text-dark); }
+        .skill-list { list-style: none; padding: 0; margin: 0; }
+        .skill-list li { font-size: 13px; margin-bottom: 8px; color: var(--text-dark); }
+        
+        @media print {
+            body { padding: 0; background: white; }
+            .cv-page { box-shadow: none; margin: 0; max-width: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-page">
+        <!-- Coluna Esquerda -->
+        <div class="left-col">
+            <h1 style="font-size: 24px;">Carlos Costato</h1>
+            <p class="title">Senior IT Project Manager | AI Specialist</p>
+            
+            <div class="section-title">Contato</div>
+            <div class="contact-info">
+                <p>São Paulo, SP</p>
+                <p>+55 11 98639-5283</p>
+                <p>carlos.costato@gmail.com</p>
+                <p>linkedin.com/in/carlos-costato</p>
+            </div>
+
+            <div class="section-title">Habilidades</div>
+            <ul class="skill-list">
+                <li>Gestão de Projetos (Agile/PMP)</li>
+                <li>Inteligência Artificial & LLMs</li>
+                <li>Cybersecurity Governance</li>
+                <li>Microsoft Power Platform</li>
+                <li>SharePoint Architecture</li>
+                <li>Business Intelligence (Power BI)</li>
+                <li>Process Automation (RPA)</li>
+            </ul>
+
+            <div class="section-title">Idiomas</div>
+            <p style="font-size: 13px;">Português (Nativo)<br>Inglês (Técnico)</p>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div class="right-col">
+            <div class="section-title" style="margin-top: 0;">Resumo Profissional</div>
+            <div class="summary">
+                <p>Gestor de Projetos de TI Sênior com mais de 10 anos de experiência em liderança de iniciativas estratégicas para ambientes Enterprise. Especialista em Cybersecurity, Governança e Automação de Processos. Atualmente aprofundando expertise em Inteligência Artificial na FIAP para integrar modelos generativos à eficiência corporativa.</p>
+            </div>
+
+            <div class="section-title">Experiência Profissional</div>
+            
+            <div class="exp-item">
+                <h3>Gerente de Projetos de Segurança da Informação</h3>
+                <p class="exp-company">Global HITSS</p>
+                <span class="exp-date">Março 2024 – Presente</span>
+                <p class="exp-desc">Liderança de portfólio de Cybersecurity em contas estratégicas. Implementação de portais de governança com 7k+ usuários ativos e coordenação de RFPs de alta complexidade.</p>
+            </div>
+
+            <div class="exp-item">
+                <h3>Analista de Negócios / Processos Sênior</h3>
+                <p class="exp-company">Global HITSS | Algar Tech | Foco Solution</p>
+                <span class="exp-date">2019 – 2024</span>
+                <p class="exp-desc">Transformação digital através de Power Platform e BI. Mapeamento de processos críticos (SIPOC/BPM) e redução significativa de risco operacional através de automação inteligente.</p>
+            </div>
+
+            <div class="section-title">Formação</div>
+            <div class="exp-item">
+                <h3>Especialização em Inteligência Artificial</h3>
+                <p class="exp-company">FIAP</p>
+                <span class="exp-date">2023 – Presente</span>
+            </div>
+            <div class="exp-item">
+                <h3>Tecnologia em Processos Gerenciais</h3>
+                <p class="exp-company">Universidade Cidade de São Paulo</p>
+            </div>
+
+            <div class="section-title">Destaques Técnicos</div>
+            <p style="font-size: 13px;">• 7.000+ usuários ativos em portais de governança.<br>• Reconhecimento da diretoria por dashboards de BI estratégico.<br>• Foco em ROI através de automação e IA.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Opcional: Adicionar botão de impressão flutuante
+        window.onload = function() {
+            // print(); 
+        }
+    </script>
+</body>
+</html>
