@@ -241,32 +241,46 @@ h1 {
   gap: 1.5rem;
 }
 
-/* Metrics - Grid Style */
-.metrics {
+/* Impact Metrics Panel */
+.metrics-panel {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
-  border-top: 1px solid var(--glass-border);
-  padding-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
-.metric-item {
-  list-style: none;
+.metric-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.metric-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent-cyan);
+  transform: translateY(-5px);
 }
 
 .metric-number {
+  display: block;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
 }
 
-.metric-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.metric-story {
+  font-size: 0.9rem;
   color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.metric-story strong {
+  color: #fff;
 }
 
 /* Section Styling */
