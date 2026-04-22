@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projetos e Cases | Carlos Costato</title>
+  <title>Portfólio de Projetos | Carlos Costato</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -26,43 +25,91 @@
   </header>
 
   <main class="container">
-    <section class="page-hero">
-      <h1>Projetos com Prova de Impacto</h1>
-      <p>Cada projeto abaixo foi estruturado para mostrar contexto, atuacao, decisao e resultado para avaliacao de carreira e recrutamento.</p>
+    <section class="section" style="text-align: center; padding-top: 6rem;">
+      <span class="eyebrow">Enterprise & Innovation</span>
+      <h1 class="section-title">Portfólio Completo de Cases & Soluções</h1>
+      <p class="section-intro">A união entre liderança de projetos corporativos e desenvolvimento técnico de alto nível.</p>
     </section>
 
+    <!-- Seção 1: Projetos Estratégicos (Enterprise) -->
     <section class="section">
-      <div class="filters">
-        <button class="filter active" data-filter="all">Todos</button>
-        <button class="filter" data-filter="sharepoint">SharePoint</button>
-        <button class="filter" data-filter="powerbi">Power BI</button>
-        <button class="filter" data-filter="automation">Automacao</button>
-        <button class="filter" data-filter="governance">Governanca</button>
+      <h2 style="margin-bottom: 3rem; font-family: 'Space Grotesk'; border-left: 4px solid var(--accent-cyan); padding-left: 1.5rem;">Cases de Sucesso Enterprise</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">Governança / SharePoint</span>
+          <h3>Portal de Governança Corporativa</h3>
+          <p><strong>Cenário:</strong> Documentos críticos dispersos e alto risco de auditoria em ambiente Cyber.</p>
+          <p><strong>Impacto:</strong> Centralização de normas e fluxos para <strong>7.000+ usuários ativos</strong> por mês.</p>
+          <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
+            <li>Redução de 40% no tempo de busca de documentos</li>
+            <li>Conformidade total em auditorias externas</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="tag">BI / Data Analytics</span>
+          <h3>Dashboard Executivo para Diretoria</h3>
+          <p><strong>Cenário:</strong> Baixa visibilidade de KPIs críticos e falhas operacionais geográficas.</p>
+          <p><strong>Impacto:</strong> Visibilidade em tempo real para tomada de decisão e priorização de ações corretivas C-Level.</p>
+          <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
+            <li>Mapeamento de causa raiz de erros operacionais</li>
+            <li>Dashboard reconhecido pela alta liderança</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="tag">RPA / Power Platform</span>
+          <h3>Automação de Processos Críticos</h3>
+          <p><strong>Cenário:</strong> Tarefas manuais repetitivas gerando gargalos em SLAs de atendimento.</p>
+          <p><strong>Impacto:</strong> Redução drástica de falhas humanas e ganho de agilidade operacional através de Power Automate.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="card-grid" id="portfolio-grid">
-        <article class="card project-card" data-tags="sharepoint governance">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Portal SharePoint de governanca">
-          <h3>Portal SharePoint de Governanca</h3>
-          <p>Desafio: documentos criticos dispersos e risco de conformidade.</p>
-          <p>Resultado: 7.000+ acessos por mes e centralizacao de conhecimento.</p>
-          <p><a class="btn ghost" href="case-portal.html">Detalhar caso</a></p>
+    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 2rem 0;">
+
+    <!-- Seção 2: Engenharia & GitHub (Technical) -->
+    <section class="section">
+      <h2 style="margin-bottom: 3rem; font-family: 'Space Grotesk'; border-left: 4px solid var(--accent-purple); padding-left: 1.5rem;">Engenharia Técnica & Inovação (GitHub)</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">AI & Career Agent</span>
+          <h3>Sr. OSvaldo (Google Gemini AI)</h3>
+          <p>Agente de IA para parsing e análise de currículos usando a API do <strong>Google Gemini</strong>.</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--accent-cyan);">Stack: JavaScript, AI Coaching, Gemini API.</p>
+          <div style="margin-top: 1.5rem;">
+            <a class="btn primary" href="https://github.com/carloscostato-cmyk/Sr.-OSvaldo" target="_blank" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Repositório</a>
+          </div>
         </article>
 
-        <article class="card project-card" data-tags="powerbi governance">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Dashboard Power BI para diretoria">
-          <h3>Dashboard Power BI para Diretoria</h3>
-          <p>Desafio: pouca visibilidade sobre origem de erros operacionais.</p>
-          <p>Resultado: priorizacao executiva de acoes corretivas com visao geografica.</p>
-          <p><a class="btn ghost" href="case-bi.html">Detalhar caso</a></p>
+        <article class="card">
+          <span class="tag">Automation & APIs</span>
+          <h3>AMFRA v2 (WhatsApp Automation)</h3>
+          <p>Integração segura via <strong>Meta WhatsApp API</strong> para entrega de tokens UUID4.</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--accent-cyan);">Stack: Python, WhatsApp Cloud API, Security.</p>
+          <div style="margin-top: 1.5rem;">
+            <a class="btn primary" href="https://github.com/carloscostato-cmyk/AMFRA_v2" target="_blank" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Repositório</a>
+          </div>
         </article>
 
-        <article class="card project-card" data-tags="automation governance">
-          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="Automacao de processos com Power Platform">
-          <h3>Automacao com Power Platform e RPA</h3>
-          <p>Desafio: retrabalho, tarefas manuais e baixa previsibilidade.</p>
-          <p>Resultado: processos mais estaveis, agilidade operacional e ganho de SLA.</p>
-          <p><a class="btn ghost" href="case-automation.html">Detalhar caso</a></p>
+        <article class="card">
+          <span class="tag">HealthTech</span>
+          <h3>Saúde Mental (HSE-IT / NR-1)</h3>
+          <p>Plataforma de assessment de riscos psicossociais baseada na metodologia HSE-IT.</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--accent-cyan);">Stack: Python, Railway, Compliance NR-1.</p>
+          <div style="margin-top: 1.5rem;">
+            <a class="btn primary" href="https://github.com/carloscostato-cmyk/AMFRA_Saude_Mental" target="_blank" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Infrastructure</span>
+          <h3>Data Center Inventory System</h3>
+          <p>Interface customizada para visualização de ativos em ambientes SharePoint.</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--accent-cyan);">Stack: HTML5/JS, SharePoint Governance.</p>
+          <div style="margin-top: 1.5rem;">
+            <a class="btn primary" href="https://github.com/carloscostato-cmyk/Data-Center-Inventory" target="_blank" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Repositório</a>
+          </div>
         </article>
       </div>
     </section>
@@ -71,17 +118,16 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong>Contato Profissional</strong>
-        <p>carlos.costato@gmail.com | +55 11 98639-5283</p>
+        <strong>CARLOS COSTATO</strong>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Senior IT Project Manager</p>
       </div>
       <div>
-        <strong>Links</strong>
-        <p><a href="https://www.linkedin.com/in/carlos-costato/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <a href="https://www.linkedin.com/in/carlos-costato/" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <a class="whatsapp" href="https://wa.me/5511986395283" target="_blank" rel="noopener" title="Falar no WhatsApp">
+  <a class="whatsapp" href="https://wa.me/5511986395283" target="_blank">
     <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
   </a>
 </body>
