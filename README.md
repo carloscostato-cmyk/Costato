@@ -1,20 +1,67 @@
-# O Mundo de Um Costato — Site (protótipo)
+# O Mundo de Um Costato & Agente de RH Autônomo
 
-Este diretório contém uma versão estática inicial do site "O Mundo de Um Costato". Ela inclui:
+Bem-vindo ao repositório central do site profissional e ecossistema de automação de carreira de **Carlos Costato**. 
 
-- `index.html` — Landing com overlay terminal "ERROR" piscando 3x
-- `services.html` — Lista de serviços
-- `portfolio.html` — Portfolio interativo (filtros)
-- `case-*.html` — 3 páginas de estudo de caso
-- `about.html`, `contact.html`, `resources.html` — páginas informativas
-- `assets/` — `css/style.css` e `js/main.js`
+Este projeto é dividido em duas partes principais: o **Portfólio Profissional (Elite Tech)** e o **Agente de RH Autônomo**.
 
-Visualização local:
+---
 
-Abra `site/index.html` no navegador (duplo clique) para ver o protótipo.
+## 🌐 1. Portfólio Profissional (O Mundo de Um Costato)
 
-Substitua a imagem do perfil em `index.html` (src do `#profile-photo`) pela sua foto real quando desejar.
+Um site estático responsivo, com design "Dark Mode Premium" e foco em alta performance e impacto visual executivo.
 
-Publicação (opcional):
+- **URL Pública:** [https://carloscostato-cmyk.github.io/Costato/](https://carloscostato-cmyk.github.io/Costato/)
+- **Páginas Incluídas:**
+  - `index.html` — Landing page de alto impacto e métricas executivas.
+  - `services.html` — Áreas de atuação técnica.
+  - `experience.html` — Histórico profissional e certificações.
+  - `portfolio.html` — Vitrine de projetos.
+  - `cv-pro.html` — Gerador de currículo otimizado no estilo LinkedIn (imprimível via `Ctrl+P`).
+  - `about.html`, `contact.html` — Sobre e contato.
 
-- Commit e push deste diretório para o seu repositório GitHub, então ative GitHub Pages na branch `main` (ou configure `gh-pages`).
+---
+
+## 🤖 2. Agente de RH Autônomo (Caçador de Vagas)
+
+Um sistema Python rodando na nuvem via **GitHub Actions**, focado em prospectar vagas alinhadas ao perfil Sênior/IA/Cybersecurity, sem intervenção manual.
+
+- **Dashboard ao Vivo:** [https://carloscostato-cmyk.github.io/Costato/agente_de_RH/](https://carloscostato-cmyk.github.io/Costato/agente_de_RH/)
+
+### 🔄 Como o Fluxo Funciona (O Pipeline)
+
+1. **Busca Automatizada (Scraping/APIs):** 
+   O robô roda no GitHub Actions e pesquisa em portais (Remotive, Arbeitnow, etc.) usando palavras-chave pré-definidas (ex: *Project Manager*, *Cybersecurity*, *IA*).
+   
+2. **Sistema de Pontuação (Match Score):** 
+   O robô lê a descrição de cada vaga e atribui uma nota (0 a 100). Vagas com menos de 36 pontos são descartadas.
+
+3. **Notificação no Telegram (4x ao dia):** 
+   O sistema dispara uma mensagem para o Telegram do Costato nos seguintes horários (Horário de Brasília - BRT):
+   - 🕖 **09:00** (Manhã)
+   - 🕛 **12:00** (Meio-dia)
+   - 🕐 **13:00** (Tarde)
+   - 🕕 **18:00** (Fim de Expediente)
+   
+   A mensagem contém um resumo das vagas, o % de match e o link direto de aplicação.
+
+4. **Gerenciamento no Dashboard:**
+   - As vagas encontradas ficam salvas em `agente_de_RH/applications.json`.
+   - O Costato abre o **Dashboard ao Vivo** (pelo link do Telegram ou pelo Site).
+   - Ao se candidatar (usando o link direto na vaga), ele clica no botão **"📝 Marcar Candidatura"** no Dashboard para salvar que já enviou currículo para aquela vaga (status salvo localmente).
+
+### 🛠️ Arquivos do Agente
+- `.github/workflows/hr_agent.yml`: O "cérebro" da automação e do agendamento (cron jobs).
+- `agente_de_RH/rh_specialist.py`: Motor de busca, filtros e regras de pontuação.
+- `agente_de_RH/telegram_notifier.py`: Classe responsável pelo disparo das mensagens formatadas para a API do Telegram.
+- `agente_de_RH/index.html`: O Dashboard visual interativo (Vue/Vanilla).
+- `agente_de_RH/applications.json`: Banco de dados persistente gerenciado pelo bot.
+
+---
+
+## ⚙️ Implantação & Dependências
+
+1. O site está rodando estaticamente via **GitHub Pages**.
+2. O bot de RH requer os seguintes **Secrets no GitHub** (`Settings > Secrets and variables > Actions`):
+   - `TELEGRAM_BOT_TOKEN`: Token gerado pelo @BotFather.
+   - `TELEGRAM_CHAT_ID`: ID do chat de destino do Costato.
+3. Todo commit na branch `main` atualiza o site instantaneamente. A base de vagas (`applications.json`) é commitada de volta no repositório de forma silenciosa (`[skip ci]`) pelo bot.
