@@ -390,6 +390,11 @@
       const hasUrl  = job.url && job.url !== '#' && job.url !== '';
       const location= job.location || 'Não informado';
       const date    = job.found_at || job.date || '';
+      
+      // Verifica se a vaga já foi marcada como aplicada no localStorage
+      let appliedJobs = [];
+      try { appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || []; } catch(e) {}
+      const isApplied = appliedJobs.includes(job.id || job.title) || job.status === 'Applied';
 
       return `
         <div class="job-card">
@@ -416,11 +421,35 @@
               ? `<a class="btn-sm btn-sm-primary" href="${job.url}" target="_blank" rel="noopener">👀 Ver Vaga</a>`
               : `<span class="btn-sm btn-sm-secondary" style="cursor:default;">🔒 Link N/D</span>`
             }
-            <span class="btn-sm btn-sm-secondary" style="cursor:default; font-size:.68rem;">
-              ${job.status || 'Detectada'}
-            </span>
+            ${isApplied
+              ? `<button class="btn-sm" style="background: rgba(61,220,132,.15); color: var(--green); border: 1px solid var(--green); cursor: default;">✅ Já me candidatei</button>`
+              : `<button class="btn-sm btn-sm-secondary" onclick="markApplied('${job.id || job.title}')" style="cursor:pointer;">📝 Marcar Candidatura</button>`
+            }
           </div>
         </div>`;
+    }
+
+    // Marca uma vaga como aplicada usando localStorage
+    function markApplied(jobId) {
+      if (!jobId) return;
+      let applied = [];
+      try {
+        applied = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+      } catch(e) {}
+      
+      if (!applied.includes(jobId)) {
+        applied.push(jobId);
+        localStorage.setItem('appliedJobs', JSON.stringify(applied));
+        
+        // Dispara um efeito visual e recarrega a lista para mostrar o botão verde
+        const btn = event.currentTarget;
+        btn.textContent = '✅ Salvo!';
+        btn.style.background = 'rgba(61,220,132,.15)';
+        btn.style.color = 'var(--green)';
+        btn.style.borderColor = 'var(--green)';
+        
+        setTimeout(loadJobs, 500);
+      }
     }
 
     // Atualiza os KPIs
