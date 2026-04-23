@@ -17,21 +17,41 @@ CANDIDATE = {
     "name": "Carlos Costato",
     "keywords": [
         "Senior IT Project Manager",
-        "Gerente de Projetos Sênior",
-        "IT Project Manager",
+        "Gerente de Projetos",
         "Head of IT",
+        "IT Director",
         "Gerente de TI",
         "Cybersecurity Manager",
-        "IA Specialist",
+        "Information Security Manager",
         "AI Project Manager",
+        "Gerente de Inteligência Artificial",
         "Technology Manager",
-        "Gestor de Projetos",
+        "Digital Transformation Lead",
+        "Scrum Master Sênior",
+        "Agile Coach",
     ],
-    "locations": ["São Paulo", "Remote", "Remoto", "Brasil"],
+    "locations": ["São Paulo", "Remote", "Remoto", "Brasil", "Híbrido", "Hybrid"],
     "score_keywords": [
-        "IA", "AI", "Cybersecurity", "Cibersegurança", "Governance",
-        "Governança", "Senior", "Sênior", "Project Manager", "Enterprise",
-        "Transformação Digital", "FIAP", "Power Platform", "Agile", "Scrum",
+        # Hard Skills Core
+        "IA", "AI", "Artificial Intelligence", "Inteligência Artificial", "Generative AI",
+        "Cybersecurity", "Cibersegurança", "InfoSec", "Information Security",
+        "Governance", "Governança", "Compliance", "Risk Management", "Gestão de Riscos",
+        
+        # Cargo e Senioridade
+        "Senior", "Sênior", "Project Manager", "Gestor de Projetos", "Liderança", 
+        "Leadership", "Head", "Manager", "Gerente", "Enterprise", "Missão Crítica",
+        
+        # Tecnologias e Ferramentas
+        "Power Platform", "Power BI", "Power Automate", "Power Apps", "SharePoint", 
+        "Microsoft 365", "RPA", "Automação", "Automation", "Dashboard", "BI", 
+        "Business Intelligence", "Analytics",
+        
+        # Metodologias
+        "Transformação Digital", "Digital Transformation", "Agile", "Ágil", "Scrum", 
+        "Kanban", "ITIL", "COBIT", "PMBOK", "SLA", "KPI", "ROI",
+        
+        # Diferenciais Pessoais
+        "FIAP", "Inglês", "Estratégia", "Strategy", "Inovação", "Innovation"
     ],
 }
 
@@ -45,8 +65,9 @@ APPLICATIONS_FILE = os.path.join(os.path.dirname(__file__), "applications.json")
 def fetch_remotive_jobs() -> list:
     """Busca vagas via API pública do Remotive.io (sem autenticação)."""
     jobs_found = []
+    search_terms = ["project manager", "IT manager", "cybersecurity", "AI manager", "digital transformation", "scrum master", "IT governance"]
     try:
-        for kw in ["project manager", "IT manager", "cybersecurity", "AI manager"]:
+        for kw in search_terms:
             url = f"https://remotive.com/api/remote-jobs?search={kw.replace(' ', '+')}&limit=10"
             resp = requests.get(url, timeout=15)
             if resp.status_code == 200:
@@ -95,18 +116,24 @@ def calculate_match(title: str, description: str) -> int:
     """Pontua a aderência da vaga ao perfil do Carlos."""
     score = 0
     text = f"{title} {description}".lower()
+    
+    # Bonificação por palavra encontrada (max 100)
     for kw in CANDIDATE["score_keywords"]:
         if kw.lower() in text:
-            score += 12
+            # Palavras essenciais valem mais
+            if kw.lower() in ["senior", "sênior", "project manager", "cybersecurity", "ia", "ai", "governança", "governance", "head"]:
+                score += 15
+            else:
+                score += 8
+                
     return min(score, 100)
-
 
 def filter_and_score(raw_jobs: list) -> list:
     """Filtra e pontua vagas, retornando apenas as relevantes."""
     scored = []
     for job in raw_jobs:
         score = calculate_match(job["title"], job.get("description", ""))
-        if score >= 36:  # Mínimo 3 keywords para considerar
+        if score >= 40:  # Match mínimo aceitável (equivale a umas 3-4 keywords fortes)
             job["match_score"] = score
             scored.append(job)
     # Ordena do maior match para o menor
