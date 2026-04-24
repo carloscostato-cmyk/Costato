@@ -371,14 +371,15 @@ h1 {
   gap: 2rem;
 }
 
-.card {
+.card, .project-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  padding: 3rem;
-  border-radius: 32px;
+  border-radius: 20px;
+  padding: 2.5rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .card::before {
