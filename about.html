@@ -9,114 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style2.css">
-  <style>
-    /* Profile & Value Layout - 5 Especialistas Design */
-    .profile-highlight {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .profile-icon {
-      font-size: 1.5rem;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 242, 255, 0.1);
-      border-radius: 10px;
-      flex-shrink: 0;
-    }
-    
-    .profile-icon::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, var(--accent-cyan), var(--accent-purple));
-      border-radius: 10px;
-      opacity: 0.1;
-      z-index: -1;
-    }
-    
-    .profile-highlight div {
-      flex: 1;
-    }
-    
-    .profile-highlight div h3 {
-      margin: 0;
-      font-size: 1.2rem;
-      color: var(--text-primary);
-    }
-    
-    .profile-highlight div p {
-      margin: 0.25rem 0 0 0;
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-    }
-    
-    .value-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .value-icon {
-      font-size: 1.5rem;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(112, 0, 255, 0.1);
-      border-radius: 10px;
-      flex-shrink: 0;
-    }
-    
-    .value-item::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, var(--accent-purple), var(--accent-blue));
-      border-radius: 10px;
-      opacity: 0.1;
-      z-index: -1;
-    }
-    
-    .value-item div {
-      flex: 1;
-    }
-    
-    .value-item div h3 {
-      margin: 0;
-      font-size: 1.2rem;
-      color: var(--text-primary);
-    }
-    
-    .value-item div p {
-      margin: 0.25rem 0 0 0;
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width:768px) {
-      .profile-highlight,
-      .value-item {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .profile-icon,
-      .value-icon {
-        margin-bottom: 0.5rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -150,34 +42,19 @@
       <p class="section-intro">Experiência consolidada em ambiente enterprise com foco em governança e transformação digital.</p>
       <div class="card-grid">
         <article class="card">
-          <div class="profile-highlight">
-            <span class="profile-icon">🎯</span>
-            <div>
-              <h3>Resumo Profissional</h3>
-              <p>Atuação orientada a execução e governança estratégica com 15+ anos de experiência em ambiente enterprise.</p>
-            </div>
-          </div>
-          <p>Liderança de projetos críticos com planejamento, gestão de risco, alinhamento executivo e entregas técnicas para times multidisciplinares.</p>
+          <span class="tag">Resumo</span>
+          <h3>Resumo Profissional</h3>
+          <p>Atuação orientada a execução e governança estratégica com 15+ anos de experiência em ambiente enterprise. Liderança de projetos críticos com planejamento, gestão de risco, alinhamento executivo e entregas técnicas para times multidisciplinares.</p>
         </article>
         <article class="card">
-          <div class="profile-highlight">
-            <span class="profile-icon">🔐</span>
-            <div>
-              <h3>Especialidades</h3>
-              <p>Cybersecurity, SharePoint, Power Platform, RPA e Transformação Digital.</p>
-            </div>
-          </div>
-          <p>Expertise em cybersecurity portfolio, SharePoint corporativo, Power Platform (Power BI, Power Automate), RPA e melhoria de processos com visão sistemica e foco em escala.</p>
+          <span class="tag">Especialidades</span>
+          <h3>Cybersecurity & Transformação Digital</h3>
+          <p>Cybersecurity, SharePoint, Power Platform, RPA e Transformação Digital. Expertise em cybersecurity portfolio, SharePoint corporativo, Power Platform (Power BI, Power Automate), RPA e melhoria de processos com visão sistemica e foco em escala.</p>
         </article>
         <article class="card">
-          <div class="profile-highlight">
-            <span class="profile-icon">🎓</span>
-            <div>
-              <h3>Formação e Evolução</h3>
-              <p>Inteligência Artificial (FIAP), Lean Six Sigma e certificações.</p>
-            </div>
-          </div>
-          <p>Curso de Inteligência Artificial na FIAP, Lean Six Sigma White Belt e certificações em SharePoint, além de trajetória prática em grandes operações corporativas.</p>
+          <span class="tag">Formação</span>
+          <h3>Educação Continuada</h3>
+          <p>Inteligência Artificial (FIAP), Lean Six Sigma e certificações. Curso de Inteligência Artificial na FIAP, Lean Six Sigma White Belt e certificações em SharePoint, além de trajetória prática em grandes operações corporativas.</p>
         </article>
       </div>
     </section>
@@ -188,33 +65,18 @@
       <p class="section-intro">Soluções que geram impacto mensurável e escalável para grandes corporações.</p>
       <div class="card-grid">
         <article class="card">
-          <div class="value-item">
-            <span class="value-icon">👁️</span>
-            <div>
-              <h3>Visão Estratégica</h3>
-              <p>Tradução de necessidades em planos executáveis</p>
-            </div>
-          </div>
+          <span class="tag">Visão</span>
+          <h3>Visão Estratégica</h3>
           <p>Tradução de necessidades estratégicas em planos de projeto executáveis, com indicadores claros de desempenho e impacto em nível diretoria.</p>
         </article>
         <article class="card">
-          <div class="value-item">
-            <span class="value-icon">⚖️</span>
-            <div>
-              <h3>Governança Executiva</h3>
-              <p>Execução com controle e qualidade</p>
-            </div>
-          </div>
+          <span class="tag">Governança</span>
+          <h3>Governança Executiva</h3>
           <p>Acompanhamento de entregas com foco em risco, qualidade e alinhamento entre áreas técnicas e executivas.</p>
         </article>
         <article class="card">
-          <div class="value-item">
-            <span class="value-icon">📈</span>
-            <div>
-              <h3>Impacto Operacional</h3>
-              <p>Resultados mensuráveis e escaláveis</p>
-            </div>
-          </div>
+          <span class="tag">Impacto</span>
+          <h3>Impacto Operacional</h3>
           <p>Projetos voltados para aumento de produtividade, organização da informação e maior confiabilidade dos processos.</p>
         </article>
       </div>

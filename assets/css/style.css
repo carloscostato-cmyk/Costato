@@ -112,17 +112,25 @@ body::before {
   text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
 }
 
-/* Hero Section - Futuristic */
-.hero {
-  padding: 12rem 0 8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+/* Hero Section - Padrão Visual Melhorado */
+.page-hero {
+  text-align: center;
+  padding: 0.2rem 0 0.1rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .hero-content {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Availability Badge - Open To Work */
@@ -351,15 +359,16 @@ h1 {
 
 /* Section Styling */
 .section {
-  padding: 4rem 0; /* Reduced from 10rem for a more compact look */
+  padding: 2rem 0; /* Further reduced to minimize excessive spacing */
 }
 
 .section-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 3rem; /* Reduced from 5rem */
+  margin-bottom: 1.5rem; /* Further reduced to minimize excessive spacing */
   background: linear-gradient(to bottom, #fff, #444);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -368,7 +377,7 @@ h1 {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem; /* Reduced from 2rem to minimize excessive spacing */
 }
 
 .card, .project-card {
@@ -435,6 +444,30 @@ h1 {
 }
 
 .whatsapp:hover {
+  transform: scale(1.15) rotate(15deg);
+}
+
+/* Robot Assistant Button */
+.robot-assistant {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+  z-index: 1000;
+  transition: var(--transition);
+  text-decoration: none;
+  color: white;
+}
+
+.robot-assistant:hover {
   transform: scale(1.15) rotate(15deg);
 }
 
