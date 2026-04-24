@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carlos Costato | Version 2.0 | Senior IT Project Manager</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Version 2.0 - Senior IT Project Manager especializado em Cybersecurity e IA. Design moderno e experiência aprimorada.">
+  <meta name="keywords" content="Carlos Costato, Version 2, Project Manager, Cybersecurity, Inteligência Artificial, FIAP, IT Leadership">
+  
+  <!-- Social Media Preview (Open Graph) -->
+  <meta property="og:title" content="Carlos Costato | Version 2.0 | Enterprise IT Leadership">
+  <meta property="og:description" content="Versão 2.0 - Design moderno e experiência aprimorada. Especialista em transformar operações complexas através de IA e automação.">
+  <meta property="og:image" content="https://carloscostato-cmyk.github.io/Costato/assets/img/profile-preview.jpg">
+  <meta property="og:url" content="https://carloscostato-cmyk.github.io/Costato/ver2.html">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carlos Costato | Version 2.0 | AI & Cybersecurity Expert">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Version 2.0 Enhanced Styles */
+    :root {
+      --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --dark-bg: #0a0a0a;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0a0;
+      --accent-cyan: #00f2fe;
+      --accent-purple: #764ba2;
+      --accent-pink: #f5576c;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+
+    /* Enhanced Header */
+    .site-header {
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(30px);
+    }
+
+    .brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .brand:hover {
+      transform: scale(1.05);
+    }
+
+    .main-nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-gradient);
+      transition: width 0.3s ease;
+    }
+
+    .main-nav a:hover::after,
+    .main-nav a[aria-current="page"]::after {
+      width: 100%;
+    }
+
+    .main-nav a:hover,
+    .main-nav a[aria-current="page"] {
+      color: var(--text-primary);
+    }
+
+    /* Enhanced Hero Section */
+    .page-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem 2rem;
+      position: relative;
+      background: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.3), transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.3), transparent 50%),
+                  radial-gradient(circle at 40% 20%, rgba(0, 242, 254, 0.2), transparent 50%);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      max-width: 1200px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: slideInLeft 1s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .hero-photo-wrapper {
+      animation: slideInRight 1s ease-out;
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      color: var(--accent-cyan);
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .eyebrow {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent-purple);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      background: linear-gradient(to right, #ffffff, #a0a0a0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .role {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+    }
+
+    .lead strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn.primary {
+      background: var(--primary-gradient);
+      color: white;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn.primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn.ghost {
+      background: transparent;
+      color: var(--text-primary);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn.ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .hero-photo-wrapper {
+      position: relative;
+    }
+
+    .hero-photo {
+      width: 400px;
+      height: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-photo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), transparent);
+      border-radius: 20px;
+    }
+
+    /* Enhanced Sections */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent-gradient);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+      background: linear-gradient(to right, #ffffff, #a0a0a0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(102, 126, 234, 0.3);
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+    }
+
+    .card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Enhanced Footer */
+    .site-footer {
+      background: rgba(10, 10, 10, 0.8);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3rem 2rem;
+      backdrop-filter: blur(20px);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-inner strong {
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .footer-inner p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .footer-inner a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-inner a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Enhanced WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.1) rotate(15deg);
+      box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Robot Assistant Button */
+    .robot-assistant {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      width: 60px;
+      height: 60px;
+      background: var(--primary-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+      z-index: 1000;
+      transition: var(--transition);
+      text-decoration: none;
+      color: white;
+    }
+
+    .robot-assistant:hover {
+      transform: scale(1.15) rotate(15deg);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .hero-photo {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
+
+      .hero-ctas {
+        justify-content: center;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Loading Animation */
+    .loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--dark-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .loading.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid var(--accent-cyan);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="ver2.html">CARLOS COSTATO</a>
+      <nav class="main-nav">
+        <a href="ver2.html" aria-current="page">Home</a>
+        <a href="services.html">Atuação</a>
+        <a href="experience.html">Experiência</a>
+        <a href="portfolio.html">Projetos</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="availability-badge">
+            <span class="status-dot"></span>
+            15+ Anos de Experiência Enterprise
+          </div>
+          <span class="eyebrow">Version 2.0 | Enterprise IT Leadership & AI Innovation</span>
+          <h1>Carlos Costato</h1>
+          <p class="role">Senior IT Project Manager | AI Specialist (FIAP) | Governance</p>
+          <p class="lead">Especialista em transformar operações complexas através de IA e automação. Aplicando modelos generativos para elevar a governança e eficiência corporativa em empresas como <strong>Porto Seguro</strong> e <strong>outras grandes corporações</strong>.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="experience.html">
+              <span>📈</span>
+              <span>Ver Experiência</span>
+            </a>
+            <a class="btn ghost" href="cv-pro.html" target="_blank">
+              <span>📄</span>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo">
+            <img src="assets/img/carlos-costato.png" alt="Carlos Costato - Senior IT Project Manager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="tag">Especialidades</span>
+      <h2>Áreas de Atuação Estratégica</h2>
+      <p class="section-intro">Soluções que unem tecnologia de ponta com governança corporativa rigorosa.</p>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">Cybersecurity</span>
+          <h3>Segurança e Governança</h3>
+          <p>Implementação de frameworks de segurança, gestão de risco e compliance em ambientes enterprise com foco em proteção de dados e privacidade.</p>
+        </article>
+        <article class="card">
+          <span class="tag">SharePoint</span>
+          <h3>Plataformas Colaborativas</h3>
+          <p>Desenvolvimento de portais corporativos, gestão documental e automação de processos com Microsoft 365 e Power Platform.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Power BI</span>
+          <h3>Business Intelligence</h3>
+          <p>Criação de dashboards executivos em Power BI que transformam dados brutos em decisões estratégicas para liderança corporativa.</p>
+        </article>
+        <article class="card">
+          <span class="tag">IA & Automação</span>
+          <h3>Inteligência Artificial</h3>
+          <p>Aplicação de modelos de IA, automação inteligente e RPA para otimizar processos, reduzir custos e aumentar produtividade operacional.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="tag">Projetos</span>
+      <h2>Projetos de Destaque</h2>
+      <p class="section-intro">Casos selecionados para demonstrar entrega real em contexto corporativo.</p>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">SharePoint</span>
+          <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=400&q=80" alt="Interface SharePoint">
+          <h3>Portal SharePoint de Governança</h3>
+          <p>Centralização documental com permissões por torre e 7.000+ acessos mensais.</p>
+          <p><a class="btn ghost" href="case-portal.html">Abrir caso</a></p>
+        </article>
+        <article class="card">
+          <span class="tag">Power BI</span>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Dashboard Power BI">
+          <h3>Dashboard Power BI para Diretoria</h3>
+          <p>Mapa de erros operacionais para priorização de ações corretivas e ganho de eficiência.</p>
+          <p><a class="btn ghost" href="case-bi.html">Abrir caso</a></p>
+        </article>
+        <article class="card">
+          <span class="tag">Automação</span>
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Automação de processos">
+          <h3>Automação e RPA</h3>
+          <p>Eliminação de atividades repetitivas, melhoria de SLA e maior confiabilidade operacional.</p>
+          <p><a class="btn ghost" href="case-automation.html">Abrir caso</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="tag">Valor</span>
+      <h2>O que Grandes Empresas Ganham com Minha Atuação</h2>
+      <p class="section-intro">Resultados comprovados em transformação digital e governança corporativa.</p>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">Governança</span>
+          <h3>Governança e Previsibilidade</h3>
+          <p>Projetos com controle de risco, acompanhamento executivo e padrão de entrega orientado a compliance.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Escala</span>
+          <h3>Estruturação e Escala</h3>
+          <p>Estruturação de processos e plataformas para suportar múltiplas áreas, equipes e demandas críticas.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Eficiência</span>
+          <h3>Eficiência com Dados e Automação</h3>
+          <p>Redução de retrabalho e aceleração de decisões com Power Platform, SharePoint e analytics gerencial.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Carlos Costato</strong>
+        <p>Senior IT Project Manager | AI Specialist</p>
+        <p>Transformando operações complexas em soluções estratégicas.</p>
+      </div>
+      <div>
+        <strong>Contato Profissional</strong>
+        <p>carlos.costato@gmail.com | +55 11 98639-5283</p>
+      </div>
+      <div>
+        <strong>Links</strong>
+        <p><a href="https://www.linkedin.com/in/carlos-costato/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <div>
+        <strong>Version 2.0</strong>
+        <p>Design moderno e experiência aprimorada.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5511986395283" target="_blank" rel="noopener" title="Falar no WhatsApp">
+    <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
+  </a>
+
+  <a class="robot-assistant" href="teste_voz.html" target="_blank" rel="noopener" title="Assistente de Voz - Ler Currículo">
+    🤖
+  </a>
+
+  <script>
+    // Version 2.0 Enhanced JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Loading animation
+      const loading = document.getElementById('loading');
+      setTimeout(() => {
+        loading.classList.remove('active');
+      }, 500);
+
+      // Header scroll effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe cards for animation
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+      });
+
+      // Enhanced button interactions
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-3px) scale(1.05)';
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0) scale(1)';
+        });
+      });
+
+      // Parallax effect for hero section
+      window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector('.page-hero');
+        if (parallax) {
+          parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+
+      // Enhanced form interactions (if contact form exists)
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Show loading
+          loading.classList.add('active');
+          
+          // Simulate form submission
+          setTimeout(() => {
+            loading.classList.remove('active');
+            alert('Mensagem enviada com sucesso! Redirecionando para WhatsApp...');
+            
+            // Redirect to WhatsApp
+            const message = encodeURIComponent('Nova mensagem de contato via Version 2.0');
+            window.open(`https://wa.me/5511986395283?text=${message}`, '_blank');
+          }, 1500);
+        });
+      }
+
+      // Enhanced keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        // Press '/' to focus search (if implemented)
+        if (e.key === '/' && !e.ctrlKey && !e.metaKey) {
+          e.preventDefault();
+          // Focus search input if exists
+        }
+        
+        // Press 'Escape' to close modals
+        if (e.key === 'Escape') {
+          // Close any open modals
+        }
+      });
+
+      // Performance monitoring
+      const performanceData = {
+        loadTime: performance.now(),
+        interactions: 0
+      };
+
+      // Track interactions
+      document.addEventListener('click', function() {
+        performanceData.interactions++;
+      });
+
+      // Log performance data
+      window.addEventListener('load', function() {
+        console.log('Version 2.0 Performance:', {
+          loadTime: performance.now(),
+          interactions: performanceData.interactions
+        });
+      });
+
+      // Enhanced accessibility
+      document.querySelectorAll('button, a').forEach(element => {
+        element.addEventListener('focus', function() {
+          this.style.outline = '2px solid var(--accent-cyan)';
+          this.style.outlineOffset = '2px';
+        });
+        
+        element.addEventListener('blur', function() {
+          this.style.outline = 'none';
+        });
+      });
+
+      console.log('Version 2.0 - Enhanced Portfolio Loaded Successfully');
+    });
+  </script>
+</body>
+</html>

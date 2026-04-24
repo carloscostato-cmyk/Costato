@@ -1,8 +1,37 @@
-# O Mundo de Um Costato & Agente de RH Autônomo
+# 🚀 Carlos Costato | Senior IT Project Manager & AI Specialist
 
-Bem-vindo ao repositório central do site profissional e ecossistema de automação de carreira de **Carlos Costato**. 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00f2fe?style=for-the-badge&logo=github&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/)
+[![Version 2.0](https://img.shields.io/badge/Version-2.0-purple?style=for-the-badge&logo=react&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/ver2.html)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-costato/)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:carlos.costato@gmail.com)
 
-Este projeto é dividido em duas partes principais: o **Portfólio Profissional (Elite Tech)** e o **Agente de RH Autônomo**.
+> **Enterprise IT Leadership & AI Innovation** | 15+ Anos de Experiência | Cybersecurity & Governance Specialist
+
+## 🌐 Portfólio Profissional
+
+**Site responsivo com design "Dark Mode Premium" focado em alta performance e impacto visual executivo.**
+
+### 📱 Links Rápidos
+- **🚀 Portfolio Principal:** [carloscostato-cmyk.github.io/Costato](https://carloscostato-cmyk.github.io/Costato/)
+- **⚡ Version 2.0:** [carloscostato-cmyk.github.io/Costato/ver2.html](https://carloscostato-cmyk.github.io/Costato/ver2.html)
+- **📄 CV Profissional:** [Gerador CV LinkedIn](https://carloscostato-cmyk.github.io/Costato/cv-pro.html)
+- **📧 Contato Direto:** [Formulário Profissional](https://carloscostato-cmyk.github.io/Costato/contact.html)
+
+### 🎯 Áreas de Atuação
+- **🔒 Cybersecurity & Governance** - Frameworks de segurança e compliance
+- **📊 Business Intelligence** - Dashboards Power BI para diretoria
+- **🤖 Inteligência Artificial** - Modelos generativos e automação
+- **🏢 SharePoint Enterprise** - Portais corporativos e gestão documental
+- **⚙️ RPA & Automação** - Processos automatizados e eficiência operacional
+
+### 📋 Páginas do Site
+- `index.html` — Landing page com métricas executivas
+- `services.html` — Áreas de atuação técnica detalhadas
+- `experience.html` — Histórico profissional e certificações FIAP
+- `portfolio.html` — Vitrine de projetos enterprise
+- `cv-pro.html` — Gerador de currículo otimizado estilo LinkedIn
+- `about.html` — Sobre e filosofia profissional
+- `contact.html` — Contato direto com integração WhatsApp
 
 ---
 

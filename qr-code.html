@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code - Carlos Costato Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .qr-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+        }
+        .qr-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .qr-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .qr-code {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 20px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #999;
+        }
+        .qr-url {
+            font-size: 14px;
+            color: #0066cc;
+            word-break: break-all;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        .qr-buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <div class="qr-title">🚀 Carlos Costato</div>
+        <div class="qr-subtitle">Senior IT Project Manager & AI Specialist</div>
+        
+        <div class="qr-code" id="qrCode">
+            QR Code gerado dinamicamente
+        </div>
+        
+        <div class="qr-url">
+            🌐 Produção: https://carloscostato-cmyk.github.io/Costato/
+        </div>
+        
+        <div class="qr-buttons">
+            <a href="https://carloscostato-cmyk.github.io/Costato/" target="_blank" class="btn">
+                🚀 Portfólio Principal
+            </a>
+            <a href="https://carloscostato-cmyk.github.io/Costato/ver2.html" target="_blank" class="btn">
+                ⚡ Version 2.0
+            </a>
+            <button onclick="downloadQR()" class="btn">
+                📱 Baixar QR Code
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Gerar QR Code usando API online
+        const qrCodeContainer = document.getElementById('qrCode');
+        const portfolioUrl = 'https://carloscostato-cmyk.github.io/Costato/';
+        
+        // Criar QR Code via API
+        function generateQRCode() {
+            const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(portfolioUrl)}&format=png&margin=10`;
+            
+            qrCodeContainer.innerHTML = `
+                <img src="${qrImageUrl}" alt="QR Code - Carlos Costato Portfolio" 
+                     style="width: 200px; height: 200px; border: 2px solid #ddd; border-radius: 10px;">
+            `;
+        }
+
+        // Download QR Code
+        function downloadQR() {
+            const img = qrCodeContainer.querySelector('img');
+            if (img) {
+                const link = document.createElement('a');
+                link.download = 'carlos-costato-portfolio-qr.png';
+                link.href = img.src;
+                link.target = '_blank';
+                link.click();
+            }
+        }
+
+        // Inicializar quando carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            generateQRCode();
+            console.log('QR Code Page Loaded - Carlos Costato Portfolio');
+        });
+
+        // Gerar QR Code imediatamente
+        generateQRCode();
+    </script>
+</body>
+</html>
