@@ -55,7 +55,7 @@
           <p class="lead">Especialista em transformar operações complexas através de IA e automação. Aplicando modelos generativos para elevar a governança e eficiência corporativa em empresas como <strong>Porto Seguro</strong> e <strong>outras grandes corporações</strong>.</p>
           <div class="hero-ctas">
             <a class="btn primary" href="experience.html">Ver Experiência</a>
-            <a class="btn ghost" href="cv-pro.html" target="_blank">Download CV</a>
+            <a class="btn ghost" id="cvReaderBtn">Download e Leitura do CV</a>
           </div>
         </div>
         <div class="hero-photo-wrapper">
@@ -151,11 +151,108 @@
     </div>
   </footer>
 
+  <!-- Modal para Teste de Voz -->
+  <div class="cv-modal" id="cvModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay" id="modalOverlay" aria-label="Fechar modal"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Assistente de Leitura de CV</h3>
+        <button class="modal-close" id="modalClose" aria-label="Fechar modal" tabindex="0">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody" role="region" aria-live="polite">
+        <!-- Conteúdo do teste_voz.html será carregado aqui -->
+      </div>
+    </div>
+  </div>
+
   <a class="whatsapp" href="https://wa.me/5511986395283" target="_blank" rel="noopener" title="Falar no WhatsApp">
     <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
   </a>
 
   <script>
+    // Funcionalidade do Modal de Teste de Voz
+    document.addEventListener('DOMContentLoaded', function() {
+      const cvReaderBtn = document.getElementById('cvReaderBtn');
+      const cvModal = document.getElementById('cvModal');
+      const modalOverlay = document.getElementById('modalOverlay');
+      const modalClose = document.getElementById('modalClose');
+      const modalBody = document.getElementById('modalBody');
+      
+      if (!cvReaderBtn) {
+        console.error('Botão cvReaderBtn não encontrado!');
+        return;
+      }
+      
+      // Abrir modal ao clicar no botão
+      cvReaderBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        console.log('Abrindo modal com teste_voz.html...');
+        
+        // Mostrar modal
+        cvModal.style.display = 'flex';
+        
+        // Carregar conteúdo do teste_voz.html
+        loadTesteVozContent();
+      });
+      
+      // Fechar modal
+      modalClose.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', closeModal);
+      
+      // Fechar com ESC
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && cvModal.style.display === 'flex') {
+          closeModal();
+        }
+      });
+      
+      function closeModal() {
+        cvModal.style.display = 'none';
+        modalBody.innerHTML = '';
+        
+        // Parar qualquer fala em andamento
+        if (window.speechSynthesis) {
+          window.speechSynthesis.cancel();
+        }
+      }
+      
+      function loadTesteVozContent() {
+        // Carregar o conteúdo do teste_voz.html
+        fetch('teste_voz.html')
+          .then(response => response.text())
+          .then(html => {
+            // Extrair o body do teste_voz.html
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const bodyContent = doc.body.innerHTML;
+            
+            // Inserir no modal
+            modalBody.innerHTML = bodyContent;
+            
+            // Executar scripts do teste_voz.html
+            executeScripts(modalBody);
+          })
+          .catch(error => {
+            console.error('Erro ao carregar teste_voz.html:', error);
+            modalBody.innerHTML = '<p>Erro ao carregar o assistente de voz. Tente novamente.</p>';
+          });
+      }
+      
+      function executeScripts(container) {
+        // Encontrar e executar scripts
+        const scripts = container.querySelectorAll('script');
+        scripts.forEach(oldScript => {
+          const newScript = document.createElement('script');
+          Array.from(oldScript.attributes).forEach(attr => {
+            newScript.setAttribute(attr.name, attr.value);
+          });
+          newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+          oldScript.parentNode.replaceChild(newScript, oldScript);
+        });
+      }
+    });
+
     // Background animado de blocos digitais - Versão melhorada
     class DigitalBlocksBackground {
         constructor(canvasId) {

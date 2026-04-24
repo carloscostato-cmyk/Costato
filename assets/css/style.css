@@ -115,22 +115,23 @@ body::before {
 /* Hero Section - Padrão Visual Melhorado */
 .page-hero {
   text-align: center;
-  padding: 0.2rem 0 0.1rem;
-  min-height: 30vh;
+  padding: 5rem 0 1rem;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   justify-content: space-between;
   text-align: left;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-text {
@@ -186,14 +187,15 @@ body::before {
 
 .eyebrow {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   font-weight: 600;
   color: var(--accent-cyan);
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
   display: block;
-  opacity: 0.8;
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
 }
 
 h1 {
@@ -478,6 +480,85 @@ h1 {
 
 .robot-assistant:hover {
   transform: scale(1.15) rotate(15deg);
+}
+
+/* CV Modal */
+.cv-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  background: var(--card-gradient);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-header h3 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.modal-close {
+  background: var(--card-gradient);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.modal-close:hover {
+  background: var(--glass-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+  color: var(--text-primary);
 }
 
 /* Responsive */
