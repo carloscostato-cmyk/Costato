@@ -3,11 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Atuação Profissional | Carlos Costato</title>
+  <title>Atuação Profissional | Carlos Costato | Open to Work</title>
+  <meta name="description" content="Linhas de entrega focadas em governança, escala, segurança e eficiência. Aberto a oportunidades e novos desafios em TI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <style>
+    /* Expertise Layout - 5 Especialistas Design */
+    .expertise-list {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .expertise-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      transition: var(--transition);
+    }
+    
+    .expertise-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateX(5px);
+    }
+    
+    .expertise-icon {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 242, 255, 0.1);
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    
+    .expertise-item div strong {
+      color: var(--accent-cyan);
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    
+    .expertise-item div p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .expertise-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      
+      .expertise-icon {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -24,63 +88,162 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="section" style="text-align: center; padding-top: 4rem;">
+  <main>
+    <section class="page-hero">
+      <div class="availability-badge">
+        <span class="status-dot"></span>
+        Disponível para novos projetos e oportunidades
+      </div>
       <span class="eyebrow">Expertise Lines</span>
-      <h1 class="section-title" style="margin-bottom: 1rem;">Atuação Profissional Enterprise</h1>
-      <p class="section-intro">Linhas de entrega focadas em governança, escala, segurança e eficiência operacional.</p>
+      <h1>Atuação Profissional Enterprise</h1>
+      <p>Linhas de entrega focadas em governança, escala, segurança e eficiência operacional com 15+ anos de experiência.</p>
     </section>
 
-    <section class="section">
+    <section class="container section">
       <div class="card-grid">
         <article class="card">
-          <span class="tag">01 / Gestão</span>
+          <span class="tag">Gestão</span>
           <h3>Gestão de Projetos e Portfólio</h3>
-          <p>Planejamento, execução e governança estratégica. Articulação entre delivery, pré-vendas e liderança executiva.</p>
-          <ul style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
-            <li>Mitigação de riscos críticos</li>
-            <li>Gestão de stakeholders complexos</li>
-            <li>Transformação digital em escala</li>
-          </ul>
+          <p>Planejamento estratégico, execução e governança de projetos críticos em ambientes enterprise como Porto Seguro.</p>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <span class="expertise-icon">🎯</span>
+              <div>
+                <strong>Mitigação de Riscos Críticos</strong>
+                <p>Identificação e neutralização proativa de riscos em projetos de missão crítica</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">👥</span>
+              <div>
+                <strong>Gestão de Stakeholders Complexos</strong>
+                <p>Articulação entre C-level, delivery teams e áreas de negócio</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">📈</span>
+              <div>
+                <strong>Transformação Digital em Escala</strong>
+                <p>Liderança de iniciativas digitais impactando 7.000+ colaboradores</p>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="card">
-          <span class="tag">02 / Segurança</span>
+          <span class="tag">Segurança</span>
           <h3>Cybersecurity e Conformidade</h3>
-          <p>Apoio a ambientes corporativos de alta criticidade, SOC e conformidade regulatória.</p>
-          <ul style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
-            <li>Qualidade documental e auditoria</li>
-            <li>Controle de risco operacional</li>
-            <li>Gestão de infraestrutura crítica</li>
-          </ul>
+          <p>Apoio a ambientes corporativos de alta criticidade, SOC e conformidade regulatória completa.</p>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <span class="expertise-icon">🔐</span>
+              <div>
+                <strong>Qualidade Documental e Auditoria</strong>
+                <p>Implementação de frameworks de segurança e documentação de compliance</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">🛡️</span>
+              <div>
+                <strong>Controle de Risco Operacional</strong>
+                <p>Gestão de permissões críticas e monitoramento de segurança contínua</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">🏢</span>
+              <div>
+                <strong>Infraestrutura Crítica</strong>
+                <p>Administração de ambientes de alta disponibilidade e performance</p>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="card">
-          <span class="tag">03 / Governança</span>
+          <span class="tag">Governança</span>
           <h3>SharePoint & Content Governance</h3>
           <p>Organização de informação crítica com portais de governança e controle de acesso granular.</p>
-          <ul style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
-            <li>Padronização de normas e processos</li>
-            <li>Centralização de conteúdo seguro</li>
-            <li>Aceleração de consultas em auditorias</li>
-          </ul>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <span class="expertise-icon">📋</span>
+              <div>
+                <strong>Padronização de Normas e Processos</strong>
+                <p>Criação e implementação de governança corporativa robusta</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">🔒</span>
+              <div>
+                <strong>Centralização de Conteúdo Seguro</strong>
+                <p>Portais corporativos com 7.000+ acessos mensais gerenciados</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">⚡</span>
+              <div>
+                <strong>Aceleração de Auditorias</strong>
+                <p>Otimização de processos de consulta e auditoria em 80%</p>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="card">
-          <span class="tag">04 / Inovação</span>
+          <span class="tag">Inovação</span>
           <h3>IA & Automação Inteligente</h3>
-          <p>Estudante de IA na <strong>FIAP</strong>. Aplicação de IA Generativa e LLMs para otimização de processos e tomada de decisão estratégica.</p>
-          <ul style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); padding-left: 1rem;">
-            <li>IA para análise de risco em Cyber</li>
-            <li>Automação inteligente de fluxos</li>
-            <li>Consultoria em Transformação Digital</li>
-          </ul>
+          <p>Aplicação de IA Generativa e LLMs para otimização de processos e tomada de decisão estratégica.</p>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <span class="expertise-icon">🤖</span>
+              <div>
+                <strong>IA para Análise de Risco</strong>
+                <p>Modelos preditivos para cybersecurity e análise de padrões</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">⚙️</span>
+              <div>
+                <strong>Automação Inteligente</strong>
+                <p>Power Platform e RPA para eliminação de gargalos operacionais</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">🚀</span>
+              <div>
+                <strong>Consultoria em Transformação</strong>
+                <p>Estratégia digital e implementação de tecnologias emergentes</p>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="card">
-          <span class="tag">05 / Tecnologia</span>
+          <span class="tag">Dados</span>
           <h3>Power Platform & Analytics</h3>
-          <p>Dashboards executivos dinâmicos e leitura estratégica de KPIs com Power BI.</p>
+          <p>Dashboards executivos dinâmicos e leitura estratégica de KPIs com Power BI e analytics avançado.</p>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <span class="expertise-icon">📊</span>
+              <div>
+                <strong>Business Intelligence</strong>
+                <p>Transformação de dados brutos em decisões estratégicas executivas</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">📈</span>
+              <div>
+                <strong>Dashboards Executivos</strong>
+                <p>Visualizações em tempo real para diretoria e C-level</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <span class="expertise-icon">🎯</span>
+              <div>
+                <strong>Análise Preditiva</strong>
+                <p>Modelos analíticos para previsão de tendências e oportunidades</p>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </section>

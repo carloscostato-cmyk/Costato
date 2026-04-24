@@ -7,7 +7,205 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <style>
+    /* Timeline & Achievements - 5 Especialistas Design */
+    .metric-highlight {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .metric-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      display: block;
+      margin-bottom: 0.5rem;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .metric-label {
+      color: var(--text-secondary);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+    
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--glass-border);
+    }
+    
+    .timeline-item.current::before {
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+    }
+    
+    .timeline-item:last-child::before {
+      display: none;
+    }
+    
+    .timeline-content {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2rem;
+      position: relative;
+      transition: var(--transition);
+    }
+    
+    .timeline-item.current .timeline-content {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+    }
+    
+    .timeline-content:hover {
+      transform: translateX(10px);
+      border-color: var(--accent-cyan);
+    }
+    
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .timeline-header h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+    
+    .company {
+      color: var(--accent-cyan);
+      font-weight: 600;
+      margin: 0.25rem 0 0 0;
+    }
+    
+    .timeline-date {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .achievement-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      transition: var(--transition);
+    }
+    
+    .achievement-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-3px);
+    }
+    
+    .achievement-icon {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 242, 255, 0.1);
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    
+    .achievement-item div strong {
+      color: var(--accent-cyan);
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    
+    .achievement-item div p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+    
+    .cta-section {
+      text-align: center;
+      padding: 3rem 0;
+    }
+    
+    .cta-section h2 {
+      margin-bottom: 1rem;
+    }
+    
+    .cta-section p {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width:768px) {
+      .timeline {
+        gap: 2rem;
+      }
+      
+      .timeline-content {
+        padding: 1.5rem;
+      }
+      
+      .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .achievements {
+        grid-template-columns: 1fr;
+      }
+      
+      .achievement-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      
+      .achievement-icon {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -24,75 +222,136 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="section" style="text-align: center; padding-top: 6rem;">
+  <main>
+    <section class="page-hero">
+      <div class="availability-badge">
+        <span class="status-dot"></span>
+        15+ Anos de Impacto Enterprise
+      </div>
       <span class="eyebrow">Proven Results</span>
-      <h1 class="section-title">Trajetória de Impacto Enterprise</h1>
-      <p class="section-intro">Liderança técnica e estratégica em projetos de Cybersecurity, Governança e Automação de Processos.</p>
+      <h1>Trajetória de Impacto Enterprise</h1>
+      <p>Liderança técnica e estratégica em projetos de Cybersecurity, Governança e Automação com resultados comprovados em grandes corporações como Porto Seguro.</p>
     </section>
 
-    <section class="section">
+    <section class="container section">
       <div class="card-grid">
         <article class="card">
-          <strong style="font-size: 2.5rem; color: var(--accent-cyan); display: block; margin-bottom: 0.5rem; font-family: 'Space Grotesk';">7.000+</strong>
-          <p>Usuários ativos mensais em portais de governança sob minha gestão.</p>
+          <div class="metric-highlight">
+            <span class="metric-number">7.000+</span>
+            <p class="metric-label">Usuários ativos mensais</p>
+          </div>
+          <p>Portais de governança corporativa sob minha gestão direta, garantindo segurança e compliance.</p>
         </article>
         <article class="card">
-          <strong style="font-size: 2.5rem; color: var(--accent-cyan); display: block; margin-bottom: 0.5rem; font-family: 'Space Grotesk';">C-Level</strong>
-          <p>Reporte direto e suporte à decisão executiva com dashboards de BI.</p>
+          <div class="metric-highlight">
+            <span class="metric-number">100%</span>
+            <p class="metric-label">Conformidade</p>
+          </div>
+          <p>Auditorias de processos críticos automatizados com aprovação completa em compliance.</p>
         </article>
         <article class="card">
-          <strong style="font-size: 2.5rem; color: var(--accent-cyan); display: block; margin-bottom: 0.5rem; font-family: 'Space Grotesk';">100%</strong>
-          <p>Conformidade em auditorias de processos críticos automatizados.</p>
+          <div class="metric-highlight">
+            <span class="metric-number">C-Level</span>
+            <p class="metric-label">Reporte Executivo</p>
+          </div>
+          <p>Dashboards de BI para suporte direto à decisão estratégica da alta gestão.</p>
         </article>
       </div>
     </section>
 
-    <section class="section">
-      <h2 style="margin-bottom: 4rem; font-family: 'Space Grotesk'; font-size: 2.5rem; border-left: 4px solid var(--accent-cyan); padding-left: 1.5rem;">Linha do Tempo Profissional</h2>
-      
-      <div style="display: flex; flex-direction: column; gap: 3rem;">
-        <article class="card">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-            <div>
+    <section class="container section">
+      <h2>Linha do Tempo Profissional</h2>
+      <div class="timeline">
+        <article class="timeline-item current">
+          <div class="timeline-content">
+            <div class="timeline-header">
               <span class="tag">Atual</span>
-              <h3 style="margin: 0.5rem 0; font-size: 1.8rem;">Gerente de Projetos de Segurança da Informação</h3>
-              <p style="color: var(--accent-cyan); font-weight: 600; font-size: 1.1rem;">Global HITSS</p>
+              <div>
+                <h3>Gerente de Projetos de Segurança da Informação</h3>
+                <p class="company">Global HITSS</p>
+              </div>
+              <span class="timeline-date">Mar 2024 - Presente</span>
             </div>
-            <span style="color: var(--text-secondary); font-size: 0.9rem; background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 50px; border: 1px solid var(--glass-border);">Mar 2024 - Presente</span>
+            <p>Liderança estratégica do portfólio de Cybersecurity para grandes contas enterprise, com foco em governança, mitigação proativa de riscos e automação documental.</p>
+            <div class="achievements">
+              <div class="achievement-item">
+                <span class="achievement-icon">🎯</span>
+                <div>
+                  <strong>Gestão de Stakeholders Executivos</strong>
+                  <p>Articulação entre C-level, delivery teams e áreas de negócio para alinhamento estratégico.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">🏢</span>
+                <div>
+                  <strong>Portal SharePoint de Governança</strong>
+                  <p>Implementação com 7.000+ acessos mensais e controle granular de permissões.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">📋</span>
+                <div>
+                  <strong>RFPs e Licitações Complexas</strong>
+                  <p>Coordenação técnica de propostas para grandes empresas e clientes estratégicos.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Liderança do portfólio de Cybersecurity para grandes contas, com foco em governança, mitigação de riscos e automação documental.</p>
-          <ul style="color: var(--text-secondary); padding-left: 1.5rem; display: grid; gap: 0.8rem;">
-            <li>Gestão de stakeholders e reporte executivo para iniciativas de segurança crítica.</li>
-            <li>Implementação de portal SharePoint de governança com 7k+ acessos.</li>
-            <li>Coordenação de RFPs e licitações técnicas complexas para grandes empresas.</li>
-          </ul>
         </article>
 
-        <article class="card" style="opacity: 0.8;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-            <div>
+        <article class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-header">
               <span class="tag">Trajetória</span>
-              <h3 style="margin: 0.5rem 0; font-size: 1.8rem;">Analista de Negócios / Processos Sênior</h3>
-              <p style="color: var(--accent-cyan); font-weight: 600; font-size: 1.1rem;">Global HITSS | Algar Tech | Foco Solution</p>
+              <div>
+                <h3>Analista de Negócios / Processos Sênior</h3>
+                <p class="company">Global HITSS | Algar Tech | Foco Solution</p>
+              </div>
+              <span class="timeline-date">2019 - 2024</span>
             </div>
-            <span style="color: var(--text-secondary); font-size: 0.9rem; background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 50px; border: 1px solid var(--glass-border);">2019 - 2024</span>
+            <p>Transformação de dor operacional em eficiência digital através de mapeamento de processos e tecnologias Microsoft Power Platform.</p>
+            <div class="achievements">
+              <div class="achievement-item">
+                <span class="achievement-icon">📊</span>
+                <div>
+                  <strong>Dashboards Power BI</strong>
+                  <p>Visualização geográfica de falhas e KPIs para tomada de decisão.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">⚙️</span>
+                <div>
+                  <strong>Metodologias SIPOC e BPM</strong>
+                  <p>Padronização de fluxos e otimização de processos corporativos.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">🤖</span>
+                <div>
+                  <strong>RPA e Power Automate</strong>
+                  <p>Automação de processos repetitivos com redução de 80% em retrabalho.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p style="margin-bottom: 1.5rem;">Foco em transformar dor operacional em eficiência digital através de mapeamento de processos e tecnologias Microsoft (Power Platform).</p>
-          <ul style="color: var(--text-secondary); padding-left: 1.5rem; display: grid; gap: 0.8rem;">
-            <li>Criação de dashboards Power BI para visualização geográfica de falhas.</li>
-            <li>Aplicação de metodologias SIPOC e BPM para padronização de fluxos.</li>
-            <li>Redução de retrabalho através de automação RPA e Power Automate.</li>
-          </ul>
         </article>
       </div>
     </section>
 
-    <section class="section" style="text-align: center;">
-      <h2 class="section-title" style="font-size: 2rem;">Pronto para Novos Desafios</h2>
-      <div class="hero-ctas" style="justify-content: center;">
-        <a class="btn primary" href="contact.html">Agendar Conversa</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/carlos-costato/" target="_blank">LinkedIn Oficial</a>
+    <section class="container section">
+      <div class="cta-section">
+        <h2>Pronto para Novos Desafios</h2>
+        <p>15+ anos de experiência em transformação digital, pronto para liderar seus próximos projetos estratégicos.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="contact.html">
+            <span>📅</span>
+            <span>Agendar Conversa</span>
+          </a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/carlos-costato/" target="_blank">
+            <span>💼</span>
+            <span>LinkedIn Oficial</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
