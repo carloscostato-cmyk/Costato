@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Robô Assistente | Carlos Costato</title>
+    <meta name="description" content="Página de teste para robô assistente que lê o currículo em voz masculina suave">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <style>
+        /* Estilo específico para página de teste */
+        .test-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .robot-container {
+            background: var(--card-bg);
+            border: 2px solid var(--card-border);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .robot-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-blue));
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .robot-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .robot-status {
+            margin-bottom: 2rem;
+        }
+        
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 242, 255, 0.1);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .robot-message {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .start-btn {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .start-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.3);
+        }
+        
+        .start-btn:active::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .robot-speaking {
+            display: none;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 242, 255, 0.05);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            animation: speaking 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes speaking {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+        
+        .voice-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .robot-eyes {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: var(--accent-cyan);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .test-page {
+                padding: 1rem;
+            }
+            
+            .robot-container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .robot-icon {
+                font-size: 3rem;
+            }
+            
+            .start-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Voltar para o site</a>
+    
+    <div class="test-page">
+        <div class="robot-container">
+            <div class="robot-icon">🤖</div>
+            
+            <div class="robot-status">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span>Robô Assistente Pronto</span>
+                </div>
+            </div>
+            
+            <div class="robot-message">
+                <strong>Assistente Virtual de Currículo</strong><br>
+                Clique no botão abaixo para ativar o robô assistente que irá ler seu currículo completo em voz masculina suave e profissional.
+            </div>
+            
+            <button class="start-btn" onclick="startRobotAssistant()">
+                <span>🎤</span>
+                <span>Iniciar Leitura do Currículo</span>
+            </button>
+            
+            <div class="robot-speaking" id="robotSpeaking">
+                <div class="robot-eyes">👀</div>
+                <div class="voice-text" id="voiceText">
+                    Iniciando análise do currículo...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Texto completo do currículo para leitura
+        const curriculumText = `
+            CARLOS COSTATO - CURRÍCULO PROFISSIONAL
+            
+            PERFIL PROFISSIONAL
+            Senior IT Project Manager com 15 anos de experiência em transformação digital, cybersecurity e governança corporativa.
+            Especialista em liderança de projetos estratégicos para ambientes enterprise.
+            
+            EXPERIÊNCIA PROFISSIONAL
+            
+            Gerente de Projetos de Segurança da Informação - Global HITSS
+            Março 2024 - Presente
+            
+            Liderança estratégica do portfólio de cybersecurity para grandes contas enterprise, com foco em governança, mitigação proativa de riscos e automação documental.
+            Gestão de stakeholders e reporte executivo para iniciativas de segurança crítica.
+            Implementação de portal SharePoint de governança com 7.000+ acessos mensais.
+            Coordenação de RFPs e licitações técnicas complexas para grandes empresas.
+            
+            Analista de Negócios e Processos Sênior - Global HITSS | Algar Tech | Foco Solution
+            2019 - 2024
+            
+            Transformação de dor operacional em eficiência digital através de mapeamento de processos e tecnologias Microsoft Power Platform.
+            Criação de dashboards Power BI para visualização geográfica de falhas.
+            Aplicação de metodologias SIPOC e BPM para padronização de fluxos.
+            Redução de retrabalho através de automação RPA e Power Automate.
+            
+            FORMAÇÃO E CERTIFICAÇÕES
+            
+            Pós-graduação em Inteligência Artificial - FIAP
+            2023 - Presente
+            
+            Lean Six Sigma White Belt
+            Certificações em SharePoint e Microsoft Power Platform
+            
+            ESPECIALIDADES
+            
+            • Cybersecurity e Governança Corporativa
+            • Microsoft Power Platform (Power BI, Power Automate, Power Apps)
+            • Gestão de Projetos e Portfólio
+            • Business Intelligence e Analytics
+            • RPA e Automação de Processos
+            • SharePoint e Content Governance
+            
+            PRINCIPAIS CONQUISTAS
+            
+            • 7.000+ usuários ativos mensais em portais de governança
+            • 100% de conformidade em auditorias de processos críticos
+            • Redução de 40% no tempo de busca de documentos
+            • Implementação de dashboards reconhecidos pela alta liderança
+            
+            IDIOMAS
+            
+            Português (Nativo) | Inglês (Técnico)
+            
+            CONTATO
+            
+            carlos.costato@gmail.com
+            +55 11 98639-5283
+            linkedin.com/in/carlos-costato
+        `;
+
+        let isReading = false;
+        let speechUtterance = null;
+        let speechTimeout = null;
+
+        function startRobotAssistant() {
+            if (isReading) {
+                stopReading();
+                return;
+            }
+            
+            const robotSpeaking = document.getElementById('robotSpeaking');
+            const voiceText = document.getElementById('voiceText');
+            const startBtn = document.querySelector('.start-btn');
+            
+            // Mostrar animação do robô falando
+            robotSpeaking.style.display = 'block';
+            startBtn.innerHTML = '<span>⏸️</span><span>Parar Leitura</span>';
+            startBtn.style.background = 'linear-gradient(135deg, var(--accent-error), var(--accent-warning))';
+            
+            // Iniciar leitura em voz
+            startReading();
+        }
+
+        function startReading() {
+            if ('speechSynthesis' in window) {
+                isReading = true;
+                
+                // Configurar voz masculina suave em português brasileiro
+                const utterance = new SpeechSynthesisUtterance(curriculumText);
+                utterance.lang = 'pt-BR';
+                utterance.rate = 0.9; // Velocidade normal
+                utterance.pitch = 0.8; // Tom mais grave (masculino)
+                utterance.volume = 0.8; // Volume moderado
+                
+                // Encontrar voz masculina brasileira
+                const voices = speechSynthesis.getVoices();
+                const maleVoice = voices.find(voice => 
+                    voice.lang.includes('pt') && 
+                    voice.name.toLowerCase().includes('male') ||
+                    voice.name.toLowerCase().includes('masculino') ||
+                    voice.name.toLowerCase().includes('brasil')
+                ) || voices.find(voice => voice.lang.includes('pt')) || voices[0];
+                
+                if (maleVoice) {
+                    utterance.voice = maleVoice;
+                }
+                
+                // Eventos da fala
+                utterance.onstart = () => {
+                    updateVoiceText('📖 Lendo currículo...');
+                    document.querySelector('.robot-eyes').textContent = '👁️';
+                };
+                
+                utterance.onend = () => {
+                    if (isReading) {
+                        updateVoiceText('✅ Leitura concluída!');
+                        document.querySelector('.robot-eyes').textContent = '😊';
+                        setTimeout(() => {
+                            stopReading();
+                        }, 2000);
+                    }
+                };
+                
+                utterance.onerror = (error) => {
+                    console.error('Erro na síntese de voz:', error);
+                    updateVoiceText('❌ Erro na leitura');
+                    document.querySelector('.robot-eyes').textContent = '😕';
+                    setTimeout(() => {
+                        stopReading();
+                    }, 3000);
+                };
+                
+                // Iniciar fala
+                speechSynthesis.speak(utterance);
+                speechUtterance = utterance;
+                
+            } else {
+                updateVoiceText('❌ Navegador não suporta síntese de voz');
+                document.querySelector('.robot-eyes').textContent = '😕';
+            }
+        }
+
+        function stopReading() {
+            isReading = false;
+            
+            // Parar fala atual
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+            }
+            
+            // Resetar interface
+            const robotSpeaking = document.getElementById('robotSpeaking');
+            const startBtn = document.querySelector('.start-btn');
+            const voiceText = document.getElementById('voiceText');
+            
+            robotSpeaking.style.display = 'none';
+            startBtn.innerHTML = '<span>🎤</span><span>Iniciar Leitura do Currículo</span>';
+            startBtn.style.background = 'linear-gradient(135deg, var(--accent-blue), var(--accent-purple))';
+            voiceText.textContent = 'Assistente pronto para iniciar';
+            document.querySelector('.robot-eyes').textContent = '🤖';
+            
+            // Limpar timeout
+            if (speechTimeout) {
+                clearTimeout(speechTimeout);
+            }
+        }
+
+        function updateVoiceText(text) {
+            const voiceText = document.getElementById('voiceText');
+            if (voiceText) {
+                voiceText.textContent = text;
+            }
+        }
+
+        // Pausar leitura com tecla ESC
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && isReading) {
+                stopReading();
+            }
+        });
+
+        // Prevenção de duplo clique
+        let isProcessing = false;
+        document.querySelector('.start-btn').addEventListener('click', function() {
+            if (isProcessing) return;
+            isProcessing = true;
+            setTimeout(() => {
+                isProcessing = false;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
