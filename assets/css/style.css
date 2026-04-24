@@ -35,6 +35,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Canvas Background */
+#digital-blocks-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* Animated Background Mesh */
 body::before {
   content: "";
@@ -46,7 +57,7 @@ body::before {
   background: 
     radial-gradient(circle at 20% 30%, rgba(0, 102, 255, 0.05) 0%, transparent 40%),
     radial-gradient(circle at 80% 70%, rgba(112, 0, 255, 0.05) 0%, transparent 40%);
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
 }
 
@@ -112,6 +123,48 @@ body::before {
 
 .hero-content {
   position: relative;
+}
+
+/* Availability Badge - Open To Work */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(0, 242, 255, 0.08);
+  border: 1px solid rgba(0, 242, 255, 0.4);
+  color: var(--accent-cyan);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+.status-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #00f2ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@keyframes floatBadge {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
 }
 
 .eyebrow {
