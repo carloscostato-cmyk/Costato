@@ -1,0 +1,85 @@
+{
+  "data_analise": "2026-04-27 14:07:39",
+  "perfil_analisado": "Carlos Costato",
+  "especialistas": [
+    {
+      "nome": "Dra. Patricia Mendes",
+      "especialidade": "Estratégia de Marca Pessoal e LinkedIn",
+      "score": 0.0,
+      "aprovacao": false
+    },
+    {
+      "nome": "Dr. Roberto Costa",
+      "especialidade": "Recrutamento Tecnológico e Headhunting",
+      "score": 0.0,
+      "aprovacao": false
+    },
+    {
+      "nome": "Dra. Fernanda Silva",
+      "especialidade": "Employer Branding e Marketing de Talentos",
+      "score": 0.0,
+      "aprovacao": false
+    }
+  ],
+  "score_medio": 0.0,
+  "aprovacao_final": false,
+  "gaps_consolidados": [
+    "AnaliseItem(item='Aberto a oportunidades', status_atual='Não configurado', status_desejado='Somente recrutadores', nivel_importancia=<NivelOtimizacao.CRITICO: 'critico'>, gap_analise='Algoritmo do LinkedIn não está ativo', recomendacao=\"Desative e reative 'Aberto a oportunidades' → Configure 'Somente recrutadores'\")",
+    "AnaliseItem(item='Título com 5 palavras-chave', status_atual='Título simples', status_desejado='Otimizado com 5 palavras-chave relevantes', nivel_importancia=<NivelOtimizacao.CRITICO: 'critico'>, gap_analise='Baixa visibilidade em buscas', recomendacao='Título: Senior IT Project Manager | Power Platform | Cybersecurity | Transformação Digital | IA')",
+    "AnaliseItem(item='Experiências formato XYZ', status_atual='Lista de tarefas', status_desejado='Todas as experiências com métricas XYZ', nivel_importancia=<NivelOtimizacao.CRITICO: 'critico'>, gap_analise='Não demonstra resultados', recomendacao=\"Converta experiências para XYZ: 'Reduzi tempo em 60% implementando dashboards, economizando R$500K'\")",
+    "AnaliseItem(item='Localização estratégica', status_atual='São Paulo', status_desejado='Configurada para mercado desejado', nivel_importancia=<NivelOtimizacao.CRITICO: 'critico'>, gap_analise='Pode limitar oportunidades remotas', recomendacao=\"Ajuste localização: 'São Paulo, SP | Disponível para remoto'\")"
+  ],
+  "recomendacoes_consolidadas": [
+    "Ajuste localização: 'São Paulo, SP | Disponível para remoto'",
+    "Converta experiências para XYZ: 'Reduzi tempo em 60% implementando dashboards, economizando R$500K'",
+    "Desative e reative 'Aberto a oportunidades' → Configure 'Somente recrutadores'",
+    "Título: Senior IT Project Manager | Power Platform | Cybersecurity | Transformação Digital | IA"
+  ],
+  "placao_acao": {
+    "fase1_critica": {
+      "duracao": "2-3 horas",
+      "itens": [
+        "Configurar 'Aberto a oportunidades' → 'Somente recrutadores'",
+        "Criar banner personalizado no Canva",
+        "Otimizar título com 5 palavras-chave",
+        "Ajustar localização estratégica"
+      ],
+      "impacto": "Reativação do algoritmo + 40% mais visibilidade"
+    },
+    "fase2_importante": {
+      "duracao": "3-4 horas",
+      "itens": [
+        "Reescrever seção 'Sobre' para tom humano",
+        "Converter experiências para formato XYZ",
+        "Adicionar mídia visual nas experiências",
+        "Reordenar competências por relevância"
+      ],
+      "impacto": "Conexão emocional + demonstração de resultados"
+    },
+    "fase3_recomendado": {
+      "duracao": "1-2 horas por semana",
+      "itens": [
+        "Personalizar pedidos de conexão",
+        "Criar calendário de posts semanais",
+        "Solicitar recomendações específicas",
+        "Monitorar métricas do perfil"
+      ],
+      "impacto": "Engajamento contínuo + networking estratégico"
+    }
+  },
+  "investimento_tempo": {
+    "implementacao_inicial": "6-9 horas",
+    "manutencao_semanal": "2-3 horas",
+    "revisao_mensal": "1-2 horas",
+    "tempo_ate_resultados": "2-4 semanas",
+    "horas_totais_primeiro_mes": "20-25 horas"
+  },
+  "roi_esperado": {
+    "aumento_visualizacoes": "300-500%",
+    "aumento_conexoes": "200-400%",
+    "aumento_mensagens_recrutadores": "400-800%",
+    "reducao_tempo_primeiro_contato": "60-80%",
+    "oportunidades_geradas": "+10-15 por mês",
+    "tempo_retorno_investimento": "2-3 meses"
+  }
+}

@@ -1,0 +1,305 @@
+[
+  {
+    "data_execucao": "2026-04-29 10:17:25",
+    "especialistas": [
+      "Rafael Sistemas",
+      "Camila Frontend",
+      "Bruno Infra"
+    ],
+    "resultados": [
+      {
+        "agente": "Rafael Sistemas",
+        "especialidade": "Especialista em Análise de Sistemas e Arquivos",
+        "data_diagnostico": "2026-04-29 10:17:25",
+        "testes": [
+          {
+            "teste": "Verificação Física do Arquivo",
+            "caminho_testado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+            "status": "SUCESSO",
+            "detalhes": {
+              "existe": true,
+              "tamanho_bytes": 69780,
+              "tamanho_mb": 0.07,
+              "data_modificacao": "2026-04-27 11:00:09"
+            },
+            "mensagem": "Arquivo encontrado (0.07 MB)"
+          },
+          {
+            "teste": "Acesso via Navegador",
+            "status": "PARCIAL",
+            "detalhes": {
+              "urls_testadas": [
+                {
+                  "url": "curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                }
+              ],
+              "urls_funcionando": [
+                "curriculo de carlos costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "./curriculo de carlos costato.pdf",
+                "./curriculo%20de%20carlos%20costato.pdf"
+              ]
+            },
+            "mensagem": "5 de 5 URLs funcionam"
+          },
+          {
+            "teste": "Análise de Código JavaScript",
+            "status": "SUCESSO",
+            "detalhes": {
+              "caminho_usado_no_codigo": "curriculo%20de%20carlos%20costato.pdf"
+            },
+            "mensagem": "Código JavaScript parece correto"
+          },
+          {
+            "teste": "Simulação de Download Real",
+            "status": "SUCESSO",
+            "detalhes": {
+              "script_gerado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\teste_download_cv.html",
+              "instrucoes": "Abra o arquivo teste_download_cv.html no navegador para testar",
+              "teste_http": {
+                "url": "http://localhost:8001/curriculo%20de%20carlos%20costato.pdf",
+                "status_code": 200,
+                "content_length": 69780,
+                "sucesso": true
+              }
+            },
+            "mensagem": "Download simulado funcionou via HTTP"
+          }
+        ],
+        "estatisticas": {
+          "total_testes": 4,
+          "testes_sucesso": 3,
+          "testes_erro": 0,
+          "testes_parcial": 1,
+          "taxa_sucesso": 75.0
+        },
+        "status_geral": "FUNCIONA_PARCIALMENTE"
+      },
+      {
+        "agente": "Camila Frontend",
+        "especialidade": "Especialista em Frontend e Experiência do Usuário",
+        "data_diagnostico": "2026-04-29 10:17:28",
+        "testes": [
+          {
+            "teste": "Verificação Física do Arquivo",
+            "caminho_testado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+            "status": "SUCESSO",
+            "detalhes": {
+              "existe": true,
+              "tamanho_bytes": 69780,
+              "tamanho_mb": 0.07,
+              "data_modificacao": "2026-04-27 11:00:09"
+            },
+            "mensagem": "Arquivo encontrado (0.07 MB)"
+          },
+          {
+            "teste": "Acesso via Navegador",
+            "status": "PARCIAL",
+            "detalhes": {
+              "urls_testadas": [
+                {
+                  "url": "curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                }
+              ],
+              "urls_funcionando": [
+                "curriculo de carlos costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "./curriculo de carlos costato.pdf",
+                "./curriculo%20de%20carlos%20costato.pdf"
+              ]
+            },
+            "mensagem": "5 de 5 URLs funcionam"
+          },
+          {
+            "teste": "Análise de Código JavaScript",
+            "status": "SUCESSO",
+            "detalhes": {
+              "caminho_usado_no_codigo": "curriculo%20de%20carlos%20costato.pdf"
+            },
+            "mensagem": "Código JavaScript parece correto"
+          },
+          {
+            "teste": "Simulação de Download Real",
+            "status": "SUCESSO",
+            "detalhes": {
+              "script_gerado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\teste_download_cv.html",
+              "instrucoes": "Abra o arquivo teste_download_cv.html no navegador para testar",
+              "teste_http": {
+                "url": "http://localhost:8001/curriculo%20de%20carlos%20costato.pdf",
+                "status_code": 200,
+                "content_length": 69780,
+                "sucesso": true
+              }
+            },
+            "mensagem": "Download simulado funcionou via HTTP"
+          }
+        ],
+        "estatisticas": {
+          "total_testes": 4,
+          "testes_sucesso": 3,
+          "testes_erro": 0,
+          "testes_parcial": 1,
+          "taxa_sucesso": 75.0
+        },
+        "status_geral": "FUNCIONA_PARCIALMENTE"
+      },
+      {
+        "agente": "Bruno Infra",
+        "especialidade": "Especialista em Infraestrutura e Deploy",
+        "data_diagnostico": "2026-04-29 10:17:31",
+        "testes": [
+          {
+            "teste": "Verificação Física do Arquivo",
+            "caminho_testado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+            "status": "SUCESSO",
+            "detalhes": {
+              "existe": true,
+              "tamanho_bytes": 69780,
+              "tamanho_mb": 0.07,
+              "data_modificacao": "2026-04-27 11:00:09"
+            },
+            "mensagem": "Arquivo encontrado (0.07 MB)"
+          },
+          {
+            "teste": "Acesso via Navegador",
+            "status": "PARCIAL",
+            "detalhes": {
+              "urls_testadas": [
+                {
+                  "url": "curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo de carlos costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                },
+                {
+                  "url": "./curriculo%20de%20carlos%20costato.pdf",
+                  "status": "SUCESSO",
+                  "caminho_resolvido": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\curriculo de carlos costato.pdf",
+                  "mensagem": "Acesso bem-sucedido"
+                }
+              ],
+              "urls_funcionando": [
+                "curriculo de carlos costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "curriculo%20de%20carlos%20costato.pdf",
+                "./curriculo de carlos costato.pdf",
+                "./curriculo%20de%20carlos%20costato.pdf"
+              ]
+            },
+            "mensagem": "5 de 5 URLs funcionam"
+          },
+          {
+            "teste": "Análise de Código JavaScript",
+            "status": "SUCESSO",
+            "detalhes": {
+              "caminho_usado_no_codigo": "curriculo%20de%20carlos%20costato.pdf"
+            },
+            "mensagem": "Código JavaScript parece correto"
+          },
+          {
+            "teste": "Simulação de Download Real",
+            "status": "SUCESSO",
+            "detalhes": {
+              "script_gerado": "c:\\Users\\Carlos Costato\\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\\Documents\\GitHub\\Costato\\teste_download_cv.html",
+              "instrucoes": "Abra o arquivo teste_download_cv.html no navegador para testar",
+              "teste_http": {
+                "url": "http://localhost:8001/curriculo%20de%20carlos%20costato.pdf",
+                "status_code": 200,
+                "content_length": 69780,
+                "sucesso": true
+              }
+            },
+            "mensagem": "Download simulado funcionou via HTTP"
+          }
+        ],
+        "estatisticas": {
+          "total_testes": 4,
+          "testes_sucesso": 3,
+          "testes_erro": 0,
+          "testes_parcial": 1,
+          "taxa_sucesso": 75.0
+        },
+        "status_geral": "FUNCIONA_PARCIALMENTE"
+      }
+    ],
+    "problemas_comuns": [],
+    "solucoes_recomendadas": [
+      "Sistema parece funcionar corretamente"
+    ],
+    "status_final": "NECESSITA_CORRECOES"
+  }
+]

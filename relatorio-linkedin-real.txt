@@ -1,0 +1,49 @@
+
+RELATORIO COMPARATIVO - ANALISE LINKEDIN REAL
+============================================================
+
+PERFIL ANALISADO:
+• URL: https://www.linkedin.com/in/carlos-costato
+• Data: 2026-04-27 14:10:14
+• Metodo: Análise Especialistas RH
+• Score Atual: 0.0/100
+
+GAPS IDENTIFICADOS: 10
+
+GAPS CRITICOS: 4
+
+1. Aberto a oportunidades
+   Status: Não configurado
+   Impacto: Algoritmo LinkedIn não ativo
+
+2. Título com 5 palavras-chave
+   Status: Provavelmente simples
+   Impacto: Baixa visibilidade em buscas
+
+3. Experiências formato XYZ
+   Status: Provavelmente lista de tarefas
+   Impacto: Não demonstra resultados
+
+4. Localização estratégica
+   Status: Provavelmente apenas São Paulo
+   Impacto: Pode limitar oportunidades remotas
+
+ANALISE VS ESPECIALISTAS:
+• Score Especialistas: 0.0/100
+• Score Analise Real: 0.0/100
+• Convergencia: ALTA
+
+DECISAO ESTRATEGICA:
+PRIORITARIO - Implementar otimizacoes criticas imediatamente
+
+PLANO DE ACAO:
+1. Fase 1 Critica: Corrigir 4 gaps criticos (2-3 horas)
+2. Fase 2 Importante: Implementar melhorias (3-4 horas)
+3. Fase 3 Manutencao: Estrategia continua (1-2 horas/semana)
+
+INSIGHT ESTRATEGICO:
+Perfil necessita otimizacao urgente para alavancar sistema de recrutamento automatizado.
+
+---
+Relatorio gerado: 2026-04-27 14:10:14
+Analise baseada em: Análise Especialistas RH

@@ -1,0 +1,62 @@
+[
+  {
+    "data_operacao": "2026-04-29 10:26:12",
+    "especialistas": [
+      "Gabriel Silva",
+      "Mariana Costa"
+    ],
+    "etapas": [
+      {
+        "especialista": "Gabriel Silva",
+        "etapa": "Verificação do Repositório",
+        "status": "SUCESSO",
+        "detalhes": {
+          "branch_atual": "main",
+          "arquivos_modificados": [
+            "teste_voz.html"
+          ],
+          "arquivos_novos": [],
+          "arquivos_nao_rastreados": [],
+          "status": "OK"
+        }
+      },
+      {
+        "especialista": "Gabriel Silva",
+        "etapa": "Validação de Arquivos",
+        "status": "SUCESSO",
+        "detalhes": {
+          "arquivos_para_commit": [
+            "teste_voz.html"
+          ],
+          "arquivos_ignorados": [],
+          "status": "OK"
+        }
+      },
+      {
+        "especialista": "Gabriel Silva",
+        "etapa": "Commit",
+        "status": "SUCESSO",
+        "detalhes": {
+          "status": "SUCESSO",
+          "mensagem": "Commit realizado com sucesso",
+          "arquivos_commitados": [
+            "teste_voz.html"
+          ],
+          "arquivos_ignorados": []
+        }
+      },
+      {
+        "especialista": "Mariana Costa",
+        "etapa": "Push",
+        "status": "SUCESSO",
+        "detalhes": {
+          "status": "SUCESSO",
+          "mensagem": "Push realizado com sucesso para branch main",
+          "branch": "main"
+        }
+      }
+    ],
+    "status_final": "SUCESSO",
+    "erros": []
+  }
+]

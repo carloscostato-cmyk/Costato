@@ -1,0 +1,33 @@
+# 🤖 Agente Autônomo de Recrutamento - Dependências
+
+# Web scraping e automação
+selenium==4.15.2
+beautifulsoup4==4.12.2
+requests==2.31.0
+
+# Processamento de dados
+pandas==2.1.3
+numpy==1.25.2
+
+# Manipulação de texto e NLP
+nltk==3.8.1
+spacy==3.7.2
+
+# Chrome WebDriver
+webdriver-manager==4.0.1
+
+# Configuração e logging
+python-dotenv==1.0.0
+loguru==0.7.2
+
+# Análise de compatibilidade
+scikit-learn==1.3.2
+
+# Manipulação de JSON e dados
+jsonschema==4.19.2
+
+# Rate limiting e delays
+ratelimit==2.2.1
+
+# Configuração de ambiente
+python-decouple==3.8

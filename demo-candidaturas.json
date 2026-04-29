@@ -1,0 +1,343 @@
+{
+  "data_execucao": "2026-04-27 12:14:08",
+  "perfil": {
+    "nome": "Carlos Costato",
+    "email": "carlos.costato@gmail.com",
+    "telefone": "+55 11 98639-5283",
+    "linkedin": "https://www.linkedin.com/in/carlos-costato/",
+    "portfolio": "https://carloscostato-cmyk.github.io/Costato/",
+    "experiencia": "15+ anos",
+    "habilidades": [
+      "Gestão de Projetos",
+      "Scrum Master",
+      "Cybersecurity",
+      "Power Platform",
+      "SharePoint",
+      "Power BI",
+      "Power Automate",
+      "Transformação Digital",
+      "IA",
+      "Machine Learning",
+      "RPA"
+    ]
+  },
+  "estatisticas": {
+    "total_vagas_analisadas": 8,
+    "vagas_compativeis": 8,
+    "taxa_compatibilidade": 100.0,
+    "score_medio": 95.625
+  },
+  "candidaturas": [
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "LinkedIn",
+        "titulo": "Senior IT Project Manager",
+        "empresa": "Tech Solutions Brasil",
+        "localizacao": "São Paulo, SP",
+        "descricao": "\n                Buscamos um Senior IT Project Manager com experiência em transformação digital e liderança de projetos complexos. \n                Requisitos: experiência com Power Platform, SharePoint, e cybersecurity. \n                Responsável por gerenciar projetos de até R$10M e equipes de 20+ pessoas.\n                Modalidade: Híbrido (3 dias na empresa, 2 dias remoto).\n                Salário: R$15.000 - R$20.000.\n                ",
+        "link": "https://linkedin.com/jobs/view/123456",
+        "publicado_em": "2024-04-27"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Olá, equipe de recrutamento!\n\nSou Carlos Costato, profissional com 15+ anos em gestão de projetos de TI, especializado em transformação digital e automação. A oportunidade de Senior IT Project Manager despertou meu interesse por combinar perfeitamente com minhas competências em liderança de projetos complexos e implementação de soluções enterprise.\n\nMeus principais resultados incluem liderança de projetos em Porto Seguro, implementação de soluções que reduziram custos operacionais em 40%, e desenvolvimento de dashboards que otimizaram a tomada de decisão em 3x. Minha formação em IA pela FIAP e certificações em cybersecurity me proporcionam uma visão única para projetos digitais.\n\nAcredito que minha experiência em liderar times de até 50 profissionais e gerenciar orçamentos superiores a R$10M pode contribuir significativamente para Tech Solutions Brasil.\n\nDisponível para entrevista e apresentação detalhada de meu portfólio.\n\nAbraços,\nCarlos Costato\n📧 carlos.costato@gmail.com\n📱 +55 11 98639-5283\n🌐 https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power Platform, SharePoint, Cybersecurity. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power Platform",
+          "SharePoint",
+          "Cybersecurity",
+          "Transformação Digital",
+          "Inteligência Artificial"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 120,
+      "compatibilidade_detalhes": [
+        "Keyword 'project manager' encontrada no título",
+        "Habilidade 'power platform' mencionada",
+        "Habilidade 'sharepoint' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Habilidade 'transformação digital' mencionada",
+        "Senioridade compatível",
+        "Localização compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Gupy",
+        "titulo": "Scrum Master Senior",
+        "empresa": "Digital Innovation Hub",
+        "localizacao": "Remoto",
+        "descricao": "\n                Procuramos Scrum Master Senior com experiência em metodologias ágeis e gestão de projetos de TI.\n                Conhecimento em Power BI, automação de processos e cybersecurity é um diferencial.\n                O candidato irá liderar times de desenvolvimento e projetos de transformação digital.\n                Experiência mínima de 5 anos em cargos de liderança.\n                Contratação CLT, benefícios completos.\n                ",
+        "link": "https://portal.gupy.com.br/jobs/789012",
+        "publicado_em": "2024-04-26"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Olá, equipe de recrutamento!\n\nSou Carlos Costato, profissional com 15+ anos em gestão de projetos de TI, especializado em transformação digital e automação. A oportunidade de Scrum Master Senior despertou meu interesse por combinar perfeitamente com minhas competências em liderança de projetos complexos e implementação de soluções enterprise.\n\nMeus principais resultados incluem liderança de projetos em Porto Seguro, implementação de soluções que reduziram custos operacionais em 40%, e desenvolvimento de dashboards que otimizaram a tomada de decisão em 3x. Minha formação em IA pela FIAP e certificações em cybersecurity me proporcionam uma visão única para projetos digitais.\n\nAcredito que minha experiência em liderar times de até 50 profissionais e gerenciar orçamentos superiores a R$10M pode contribuir significativamente para Digital Innovation Hub.\n\nDisponível para entrevista e apresentação detalhada de meu portfólio.\n\nAbraços,\nCarlos Costato\n📧 carlos.costato@gmail.com\n📱 +55 11 98639-5283\n🌐 https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power BI, Cybersecurity, Transformação Digital. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power BI",
+          "Cybersecurity",
+          "Transformação Digital",
+          "Inteligência Artificial",
+          "Scrum"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 90,
+      "compatibilidade_detalhes": [
+        "Keyword 'scrum master' encontrada no título",
+        "Habilidade 'power bi' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Habilidade 'transformação digital' mencionada",
+        "Senioridade compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Vagas.com.br",
+        "titulo": "Gerente de Projetos de TI",
+        "empresa": "Financial Services Corp",
+        "localizacao": "São Paulo, SP",
+        "descricao": "\n                Gerente de Projetos de TI para área de serviços financeiros. \n                Experiência com SharePoint, Power BI e implementação de soluções de cybersecurity.\n                Responsável por projetos de governança e compliance digital.\n                Experiência com frameworks de gestão (PMBOK, Agile) é essencial.\n                Salário competitivo + bônus por performance.\n                ",
+        "link": "https://www.vagas.com.br/vagas/345678",
+        "publicado_em": "2024-04-25"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Olá, equipe de recrutamento!\n\nSou Carlos Costato, profissional com 15+ anos em gestão de projetos de TI, especializado em transformação digital e automação. A oportunidade de Gerente de Projetos de TI despertou meu interesse por combinar perfeitamente com minhas competências em liderança de projetos complexos e implementação de soluções enterprise.\n\nMeus principais resultados incluem liderança de projetos em Porto Seguro, implementação de soluções que reduziram custos operacionais em 40%, e desenvolvimento de dashboards que otimizaram a tomada de decisão em 3x. Minha formação em IA pela FIAP e certificações em cybersecurity me proporcionam uma visão única para projetos digitais.\n\nAcredito que minha experiência em liderar times de até 50 profissionais e gerenciar orçamentos superiores a R$10M pode contribuir significativamente para Financial Services Corp.\n\nDisponível para entrevista e apresentação detalhada de meu portfólio.\n\nAbraços,\nCarlos Costato\n📧 carlos.costato@gmail.com\n📱 +55 11 98639-5283\n🌐 https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em SharePoint, Power BI, Cybersecurity. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "SharePoint",
+          "Power BI",
+          "Cybersecurity",
+          "Inteligência Artificial",
+          "Agile"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 105,
+      "compatibilidade_detalhes": [
+        "Keyword 'gerente' encontrada no título",
+        "Habilidade 'sharepoint' mencionada",
+        "Habilidade 'power bi' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Senioridade compatível",
+        "Localização compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Indeed",
+        "titulo": "IT Project Manager - Cybersecurity",
+        "empresa": "SecureTech Solutions",
+        "localizacao": "Remoto",
+        "descricao": "\n                IT Project Manager especializado em projetos de cybersecurity e governança digital.\n                Experiência com implementação de frameworks de segurança, Power Platform e automação.\n                Liderança de equipes multidisciplinares e gestão de stakeholders.\n                Certificações em cybersecurity (CISSP, CISM) são valorizadas.\n                Ambiente remoto com flexibilidade de horários.\n                ",
+        "link": "https://br.indeed.com/jobs/901234",
+        "publicado_em": "2024-04-24"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Prezado(a) recrutador(a),\n\nMeu nome é Carlos Costato, Senior IT Project Manager com 15+ anos de experiência em transformação digital e liderança de projetos complexos. Ao analisar a vaga de IT Project Manager - Cybersecurity, identifiquei forte alinhamento com minhas competências em gestão de projetos enterprise e implementação de soluções tecnológicas inovadoras.\n\nDurante minha carreira, lideriei projetos de alto impacto como a implementação de portais corporativos com 7.000+ acessos mensais e dashboards executivos que reduziram o tempo de análise em 60%. Minha especialização em IA pela FIAP e experiência com frameworks de segurança me permitem entregar soluções inovadoras e seguras.\n\nEstou particularmente interessado(a) em contribuir com SecureTech Solutions no desenvolvimento de projetos estratégicos que combinem tecnologia e governança corporativa.\n\nGostaria de agendar uma conversa para detalhar como minha experiência pode agregar valor aos seus objetivos.\n\nAtenciosamente,\nCarlos Costato\ncarlos.costato@gmail.com\n+55 11 98639-5283\nhttps://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power Platform, Cybersecurity, Inteligência Artificial. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power Platform",
+          "Cybersecurity",
+          "Inteligência Artificial"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 90,
+      "compatibilidade_detalhes": [
+        "Keyword 'project manager' encontrada no título",
+        "Habilidade 'power platform' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Senioridade compatível",
+        "Localização compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Catho",
+        "titulo": "Product Owner - Power Platform",
+        "empresa": "Cloud Systems Integration",
+        "localizacao": "Híbrido - São Paulo",
+        "descricao": "\n                Product Owner com experiência em Power Platform (Power BI, Power Apps, Power Automate).\n                Responsável pelo backlog de produtos digitais e alinhamento com estratégia de negócios.\n                Experiência com metodologias ágeis e gestão de expectativas de stakeholders.\n                Conhecimento em SharePoint e automação de processos é necessário.\n                Oportunidade de crescimento em empresa de tecnologia em expansão.\n                ",
+        "link": "https://www.catho.com.br/vagas/567890",
+        "publicado_em": "2024-04-23"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Olá, equipe de recrutamento!\n\nSou Carlos Costato, profissional com 15+ anos em gestão de projetos de TI, especializado em transformação digital e automação. A oportunidade de Product Owner - Power Platform despertou meu interesse por combinar perfeitamente com minhas competências em liderança de projetos complexos e implementação de soluções enterprise.\n\nMeus principais resultados incluem liderança de projetos em Porto Seguro, implementação de soluções que reduziram custos operacionais em 40%, e desenvolvimento de dashboards que otimizaram a tomada de decisão em 3x. Minha formação em IA pela FIAP e certificações em cybersecurity me proporcionam uma visão única para projetos digitais.\n\nAcredito que minha experiência em liderar times de até 50 profissionais e gerenciar orçamentos superiores a R$10M pode contribuir significativamente para Cloud Systems Integration.\n\nDisponível para entrevista e apresentação detalhada de meu portfólio.\n\nAbraços,\nCarlos Costato\n📧 carlos.costato@gmail.com\n📱 +55 11 98639-5283\n🌐 https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power Platform, SharePoint, Power BI. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power Platform",
+          "SharePoint",
+          "Power BI",
+          "Power Automate",
+          "Inteligência Artificial"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 105,
+      "compatibilidade_detalhes": [
+        "Keyword 'product owner' encontrada no título",
+        "Habilidade 'power platform' mencionada",
+        "Habilidade 'sharepoint' mencionada",
+        "Habilidade 'power bi' mencionada",
+        "Senioridade compatível",
+        "Localização compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "LinkedIn",
+        "titulo": "Digital Transformation Manager",
+        "empresa": "Enterprise Digital Solutions",
+        "localizacao": "São Paulo, SP",
+        "descricao": "\n                Digital Transformation Manager para liderar projetos de transformação digital em grande empresa.\n                Experiência com Power Platform, SharePoint, IA e automação de processos.\n                Gestão de portfólio de projetos com orçamentos superiores a R$5M.\n                Liderança de equipes de até 30 pessoas e coordenação de fornecedores.\n                Inglês fluente e experiência com metodologias ágeis.\n                ",
+        "link": "https://linkedin.com/jobs/view/234567",
+        "publicado_em": "2024-04-22"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Prezado(a) recrutador(a),\n\nMeu nome é Carlos Costato, Senior IT Project Manager com 15+ anos de experiência em transformação digital e liderança de projetos complexos. Ao analisar a vaga de Digital Transformation Manager, identifiquei forte alinhamento com minhas competências em gestão de projetos enterprise e implementação de soluções tecnológicas inovadoras.\n\nDurante minha carreira, lideriei projetos de alto impacto como a implementação de portais corporativos com 7.000+ acessos mensais e dashboards executivos que reduziram o tempo de análise em 60%. Minha especialização em IA pela FIAP e experiência com frameworks de segurança me permitem entregar soluções inovadoras e seguras.\n\nEstou particularmente interessado(a) em contribuir com Enterprise Digital Solutions no desenvolvimento de projetos estratégicos que combinem tecnologia e governança corporativa.\n\nGostaria de agendar uma conversa para detalhar como minha experiência pode agregar valor aos seus objetivos.\n\nAtenciosamente,\nCarlos Costato\ncarlos.costato@gmail.com\n+55 11 98639-5283\nhttps://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power Platform, SharePoint, Transformação Digital. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power Platform",
+          "SharePoint",
+          "Transformação Digital",
+          "Inteligência Artificial"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 90,
+      "compatibilidade_detalhes": [
+        "Keyword 'manager' encontrada no título",
+        "Habilidade 'power platform' mencionada",
+        "Habilidade 'sharepoint' mencionada",
+        "Habilidade 'transformação digital' mencionada",
+        "Senioridade compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Gupy",
+        "titulo": "Program Manager - IA & Automation",
+        "empresa": "AI Innovation Labs",
+        "localizacao": "Remoto",
+        "descricao": "\n                Program Manager para projetos de Inteligência Artificial e automação inteligente.\n                Experiência com implementação de soluções de IA, machine learning e RPA.\n                Gestão de programas complexos com múltiplos projetos interdependentes.\n                Conhecimento em Power BI, cybersecurity e governança de dados.\n                Formação em áreas de tecnologia é um diferencial.\n                ",
+        "link": "https://portal.gupy.com.br/jobs/345678",
+        "publicado_em": "2024-04-21"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Prezados(as),\n\nMeu nome é Carlos Costato e sou um profissional apaixonado por transformação digital com 15+ anos de experiência em liderança de projetos de TI. A vaga de Program Manager - IA & Automation chamou minha atenção por representar o tipo de desafio que mais me motiva: combinar inovação tecnológica com resultados de negócios mensuráveis.\n\nMinha trajetória inclui projetos de sucesso como a implementação de plataformas de governança corporativa, desenvolvimento de soluções de BI que impactaram diretamente a estratégia empresarial, e automação de processos que geraram economia significativa. Minha especialização em IA pela FIAP me mantém atualizado com as tendências do mercado.\n\nO que mais me atrai em AI Innovation Labs é a oportunidade de aplicar minha experiência em projetos estratégicos que unem tecnologia, governança e inovação.\n\nEstou confiante de que posso contribuir para seus objetivos e gostaria muito de conversar sobre como minhas competências podem agregar valor ao seu time.\n\nFico à disposição para uma entrevista.\n\nCarlos Costato\ncarlos.costato@gmail.com\n+55 11 98639-5283\nLinkedIn: https://www.linkedin.com/in/carlos-costato/\nPortfolio: https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em Power BI, Cybersecurity, Inteligência Artificial. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "Power BI",
+          "Cybersecurity",
+          "Inteligência Artificial",
+          "Machine Learning",
+          "RPA"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 75,
+      "compatibilidade_detalhes": [
+        "Keyword 'program manager' encontrada no título",
+        "Habilidade 'power bi' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Senioridade compatível"
+      ]
+    },
+    {
+      "data_aplicacao": "2026-04-27 12:14:08",
+      "vaga": {
+        "plataforma": "Vagas.com.br",
+        "titulo": "IT Governance Manager",
+        "empresa": "Compliance & Risk Management",
+        "localizacao": "São Paulo, SP",
+        "descricao": "\n                IT Governance Manager para implementação de frameworks de governança e compliance.\n                Experiência com cybersecurity, GDPR, LGPD e padrões internacionais.\n                Gestão de projetos de auditoria e conformidade digital.\n                Conhecimento em SharePoint para gestão documental e Power BI para dashboards.\n                Certificações COBIT, ITIL ou similares são valorizadas.\n                ",
+        "link": "https://www.vagas.com.br/vagas/123789",
+        "publicado_em": "2024-04-20"
+      },
+      "status": "Aplicada",
+      "carta_apresentacao": "Olá, equipe de recrutamento!\n\nSou Carlos Costato, profissional com 15+ anos em gestão de projetos de TI, especializado em transformação digital e automação. A oportunidade de IT Governance Manager despertou meu interesse por combinar perfeitamente com minhas competências em liderança de projetos complexos e implementação de soluções enterprise.\n\nMeus principais resultados incluem liderança de projetos em Porto Seguro, implementação de soluções que reduziram custos operacionais em 40%, e desenvolvimento de dashboards que otimizaram a tomada de decisão em 3x. Minha formação em IA pela FIAP e certificações em cybersecurity me proporcionam uma visão única para projetos digitais.\n\nAcredito que minha experiência em liderar times de até 50 profissionais e gerenciar orçamentos superiores a R$10M pode contribuir significativamente para Compliance & Risk Management.\n\nDisponível para entrevista e apresentação detalhada de meu portfólio.\n\nAbraços,\nCarlos Costato\n📧 carlos.costato@gmail.com\n📱 +55 11 98639-5283\n🌐 https://carloscostato-cmyk.github.io/Costato/",
+      "curriculo_adaptado": {
+        "resumo_personalizado": "Senior IT Project Manager com 15+ anos de experiência em transformação digital, \n        especializado em SharePoint, Power BI, Cybersecurity. \n        Liderança de projetos enterprise com resultados comprovados em automação, \n        governança e otimização de processos.",
+        "habilidades_destaque": [
+          "SharePoint",
+          "Power BI",
+          "Cybersecurity",
+          "Inteligência Artificial"
+        ],
+        "experiencias_relevantes": [
+          "Liderança de projetos de automação e transformação digital",
+          "Implementação de soluções com SharePoint, Power BI e Power Automate",
+          "Liderança de times multidisciplinares",
+          "Especialização em Cybersecurity e Governança",
+          "Projetos para Porto Seguro e grandes corporações"
+        ]
+      },
+      "score_compatibilidade": 90,
+      "compatibilidade_detalhes": [
+        "Keyword 'manager' encontrada no título",
+        "Habilidade 'sharepoint' mencionada",
+        "Habilidade 'power bi' mencionada",
+        "Habilidade 'cybersecurity' mencionada",
+        "Senioridade compatível"
+      ]
+    }
+  ]
+}

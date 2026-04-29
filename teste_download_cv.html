@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Download CV</title>
+</head>
+<body>
+    <h1>Teste de Download CV</h1>
+    <button onclick="testarDownload()">Testar Download</button>
+    <div id="resultado"></div>
+    
+    <script>
+        function testarDownload() {
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = 'Iniciando teste...';
+            
+            try {
+                // Simular exatamente o código do site
+                const cvPath = 'curriculo%20de%20carlos%20costato.pdf';
+                const link = document.createElement('a');
+                link.href = cvPath;
+                link.download = 'Carlos_Costato_CV.pdf';
+                link.style.display = 'none';
+                
+                document.body.appendChild(link);
+                
+                // Verificar se o link foi criado corretamente
+                resultado.innerHTML += '<br>Link criado: ' + link.href;
+                resultado.innerHTML += '<br>Download attribute: ' + link.download;
+                
+                // Tentar verificar se o arquivo existe
+                fetch(cvPath, {method: 'HEAD'})
+                    .then(response => {
+                        resultado.innerHTML += '<br>Status HTTP: ' + response.status;
+                        if (response.ok) {
+                            resultado.innerHTML += '<br><strong>SUCESSO: Arquivo encontrado!</strong>';
+                        } else {
+                            resultado.innerHTML += '<br><strong>ERRO: Arquivo não encontrado!</strong>';
+                        }
+                    })
+                    .catch(error => {
+                        resultado.innerHTML += '<br><strong>ERRO: ' + error.message + '</strong>';
+                    });
+                
+                // Limpar
+                setTimeout(() => {
+                    document.body.removeChild(link);
+                }, 1000);
+                
+            } catch (error) {
+                resultado.innerHTML += '<br><strong>ERRO: ' + error.message + '</strong>';
+            }
+        }
+    </script>
+</body>
+</html>
+            

@@ -1,0 +1,155 @@
+{
+  "agente_config": {
+    "nome": "Agente Autônomo de Recrutamento",
+    "versao": "1.0.0",
+    "modo": "producao",
+    "max_aplicacoes_diarias": 10,
+    "pausa_entre_aplicacoes": {
+      "min": 2,
+      "max": 5
+    }
+  },
+  "perfil_profissional": {
+    "nome": "Carlos Costato",
+    "email": "carlos.costato@gmail.com",
+    "telefone": "+55 11 98639-5283",
+    "linkedin": "https://www.linkedin.com/in/carlos-costato/",
+    "portfolio": "https://carloscostato-cmyk.github.io/Costato/",
+    "github": "https://github.com/carloscostato-cmyk/Costato",
+    "localizacao": "São Paulo, SP",
+    "experiencia": "15+ anos",
+    "senioridade": "Senior",
+    "modalidade": ["Remoto", "Híbrido", "Presencial"],
+    "salario_minimo": 15000,
+    "disponibilidade": "Imediata"
+  },
+  "plataformas_busca": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/jobs/",
+      "ativa": true,
+      "max_resultados": 20,
+      "requer_login": true
+    },
+    "gupy": {
+      "url": "https://www.gupy.com.br/",
+      "ativa": true,
+      "max_resultados": 30,
+      "requer_login": false
+    },
+    "vagas": {
+      "url": "https://www.vagas.com.br/",
+      "ativa": true,
+      "max_resultados": 25,
+      "requer_login": false
+    },
+    "indeed": {
+      "url": "https://br.indeed.com/",
+      "ativa": true,
+      "max_resultados": 20,
+      "requer_login": false
+    },
+    "catho": {
+      "url": "https://www.catho.com.br/",
+      "ativa": true,
+      "max_resultados": 25,
+      "requer_login": false
+    }
+  },
+  "filtros_busca": {
+    "keywords": [
+      "Project Manager",
+      "Gestor de Projetos",
+      "Scrum Master",
+      "Cybersecurity",
+      "Segurança da Informação",
+      "Power Platform",
+      "SharePoint",
+      "Power BI",
+      "Power Automate",
+      "Transformação Digital",
+      "Digital Transformation",
+      "IT Manager",
+      "Gerente de TI",
+      "Product Owner",
+      "Agile Coach",
+      "Program Manager"
+    ],
+    "senioridade": ["Senior", "Sênior", "Pleno", "Analista Sênior", "Especialista"],
+    "localizacao": [
+      "São Paulo",
+      "SP",
+      "Remoto",
+      "Home Office",
+      "Híbrido",
+      "Brasil"
+    ],
+    "excluir": [
+      "Junior",
+      "Estágio",
+      "Trainee",
+      "Aprendiz",
+      "Assistente",
+      "Coordenador"
+    ],
+    "excluir_empresas": [
+      "N/A",
+      "Confidencial"
+    ]
+  },
+  "criterios_compatibilidade": {
+    "pesos": {
+      "keywords_titulo": 25,
+      "keywords_descricao": 15,
+      "senioridade": 20,
+      "localizacao": 15,
+      "exclusao": -50,
+      "bonus_empresa": 10
+    },
+    "score_minimo": 50,
+    "score_excelente": 80
+  },
+  "personalizacao_candidatura": {
+    "templates_carta": 3,
+    "personalizar_curriculo": true,
+    "adaptar_experiencias": true,
+    "destacar_resultados": true,
+    "tom_voz": "profissional_mas_humanizado"
+  },
+  "registro_candidaturas": {
+    "arquivo_json": "candidaturas.json",
+    "arquivo_csv": "candidaturas.csv",
+    "backup_diario": true,
+    "campos_registro": [
+      "data_aplicacao",
+      "plataforma",
+      "titulo_vaga",
+      "empresa",
+      "localizacao",
+      "score_compatibilidade",
+      "status",
+      "carta_apresentacao",
+      "curriculo_adaptado"
+    ]
+  },
+  "configuracoes_avancadas": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "timeout_requisicao": 30,
+    "max_tentativas": 3,
+    "delay_erro": 10,
+    "proxy": null,
+    "headless": true,
+    "log_level": "INFO"
+  },
+  "inteligencia_artificial": {
+    "analise_sentimento": true,
+    "extrair_habilidades": true,
+    "prever_sucesso": true,
+    "aprender_feedback": true
+  },
+  "seguranca": {
+    "validar_ssl": true,
+    "rate_limiting": true,
+    "protecao_anti_bot": true,
+    "limite_diario_plataforma": 50
+  }
+}

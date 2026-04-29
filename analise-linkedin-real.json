@@ -1,0 +1,90 @@
+{
+  "data_analise": "2026-04-27 14:10:14",
+  "url": "https://www.linkedin.com/in/carlos-costato",
+  "metodo": "Análise Especialistas RH",
+  "itens_analisados": {},
+  "gaps_identificados": [
+    {
+      "item": "Aberto a oportunidades",
+      "status": "Não configurado",
+      "critico": true,
+      "impacto": "Algoritmo LinkedIn não ativo"
+    },
+    {
+      "item": "Título com 5 palavras-chave",
+      "status": "Provavelmente simples",
+      "critico": true,
+      "impacto": "Baixa visibilidade em buscas"
+    },
+    {
+      "item": "Experiências formato XYZ",
+      "status": "Provavelmente lista de tarefas",
+      "critico": true,
+      "impacto": "Não demonstra resultados"
+    },
+    {
+      "item": "Localização estratégica",
+      "status": "Provavelmente apenas São Paulo",
+      "critico": true,
+      "impacto": "Pode limitar oportunidades remotas"
+    },
+    {
+      "item": "Banner personalizado",
+      "status": "Provavelmente padrão LinkedIn",
+      "critico": false,
+      "impacto": "Sem diferenciação visual"
+    },
+    {
+      "item": "Seção Sobre humanizada",
+      "status": "Provavelmente formato currículo",
+      "critico": false,
+      "impacto": "Sem conexão emocional"
+    },
+    {
+      "item": "Mídia visual nas experiências",
+      "status": "Provavelmente apenas texto",
+      "critico": false,
+      "impacto": "Falta prova visual"
+    },
+    {
+      "item": "Competências ordenadas",
+      "status": "Provavelmente desordenadas",
+      "critico": false,
+      "impacto": "Habilidades não destacadas"
+    },
+    {
+      "item": "Conexões personalizadas",
+      "status": "Provavelmente mensagens genéricas",
+      "critico": false,
+      "impacto": "Baixa taxa de aceitação"
+    },
+    {
+      "item": "Posts semanais",
+      "status": "Provavelmente inativo",
+      "critico": false,
+      "impacto": "Perfil sem engajamento"
+    }
+  ],
+  "recomendacoes": [
+    "1. Configurar 'Aberto a oportunidades' → 'Somente recrutadores'",
+    "2. Otimizar título: Senior IT Project Manager | Power Platform | Cybersecurity | Transformação Digital | IA",
+    "3. Converter experiências para formato XYZ com métricas",
+    "4. Ajustar localização: 'São Paulo, SP | Disponível para remoto'",
+    "5. Criar banner personalizado no Canva",
+    "6. Reescrever seção 'Sobre' para tom humano",
+    "7. Adicionar mídia visual nas experiências principais",
+    "8. Reordenar competências por relevância",
+    "9. Criar estratégia de conexões personalizadas",
+    "10. Estabelecer calendário de posts semanais"
+  ],
+  "score_atual": 0,
+  "status_abaixo_oportunidades": "Não verificado",
+  "titulo_atual": "Não verificado",
+  "secao_sobre": "Não verificado",
+  "experiencias_xyz": "Não verificado",
+  "midia_visual": "Não verificado",
+  "competencias": "Não verificado",
+  "localizacao": "Não verificado",
+  "conexoes": "Não verificado",
+  "posts": "Não verificado"
+}

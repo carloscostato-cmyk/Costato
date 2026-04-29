@@ -1,0 +1,43 @@
+[
+  {
+    "data_execucao": "2026-04-27 12:14:27",
+    "candidaturas": [
+      {
+        "data_aplicacao": "2026-04-27 10:00:00",
+        "vaga": {
+          "titulo": "Senior IT Project Manager",
+          "empresa": "Tech Solutions Brasil",
+          "plataforma": "LinkedIn",
+          "link": "https://linkedin.com/jobs/view/123456"
+        },
+        "status_atual": "entrevista_agendada",
+        "ultima_atualizacao": "2026-04-27 14:30:00",
+        "feedback": {
+          "tipo": "entrevista_agendada",
+          "mensagem": "Prezado Carlos, recebemos sua candidatura e gostaríamos de agendar uma entrevista para próxima terça-feira às 14h.",
+          "remetente": "recrutamento@techsolutions.com.br"
+        }
+      },
+      {
+        "data_aplicacao": "2026-04-27 11:00:00",
+        "vaga": {
+          "titulo": "Scrum Master Senior",
+          "empresa": "Digital Innovation Hub",
+          "plataforma": "Gupy",
+          "link": "https://portal.gupy.com.br/jobs/789012"
+        },
+        "status_atual": "entrevista_agendada",
+        "ultima_atualizacao": "2026-04-27 12:15:03",
+        "feedback": {
+          "vaga_id": 1,
+          "empresa": "Tech Solutions Brasil",
+          "assunto": "Re: Senior IT Project Manager - Sua Candidatura",
+          "remetente": "recrutamento@techsolutions.com.br",
+          "mensagem": "Prezado Carlos, recebemos sua candidatura e gostaríamos de agendar uma entrevista...",
+          "data": "2026-04-27 12:15:03",
+          "tipo": "entrevista_agendada"
+        }
+      }
+    ]
+  }
+]

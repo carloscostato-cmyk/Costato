@@ -1,0 +1,20 @@
+{
+  "data_verificacao": "2026-04-27 12:15:03",
+  "total_candidaturas": 1,
+  "total_atualizacoes": 1,
+  "canais_verificados": [
+    "Email",
+    "LinkedIn",
+    "WhatsApp"
+  ],
+  "atualizacoes": [
+    {
+      "vaga": "Scrum Master Senior",
+      "empresa": "Digital Innovation Hub",
+      "status_anterior": "aplicada",
+      "status_novo": "entrevista_agendada",
+      "data": "2026-04-27 12:15:03",
+      "mensagem": "Prezado Carlos, recebemos sua candidatura e gostaríamos de agendar uma entrevista......"
+    }
+  ]
+}
