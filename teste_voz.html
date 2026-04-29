@@ -436,8 +436,8 @@
         }
 
         function downloadCV() {
-            // Agente 1: Validação e preparação do arquivo
-            const cvPath = 'curriculo de carlos costato.pdf';
+            // Agente 1: Validação do arquivo (Teste 1 funcionando)
+            const cvPath = 'curriculo%20de%20carlos%20costato.pdf';
             const downloadName = 'Carlos_Costato_CV.pdf';
             
             // Agente 2: Criação do link de download
@@ -445,105 +445,40 @@
             link.href = cvPath;
             link.download = downloadName;
             link.style.display = 'none';
-            link.target = '_blank';
             
-            // Agente 3: Execução do download com verificação
+            // Agente 3: Execução do download
             document.body.appendChild(link);
             
-            // Feedback visual inicial
-            const downloadBtn = document.querySelector('.download-btn');
-            const originalText = downloadBtn.innerHTML;
-            downloadBtn.innerHTML = '<span>⏳</span><span>Preparando download...</span>';
-            downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-blue), var(--accent-purple))';
-            
-            // Verificar se o arquivo existe antes de baixar
-            fetch(cvPath, {method: 'HEAD'})
-                .then(response => {
-                    if (response.ok) {
-                        // Arquivo encontrado - iniciar download
-                        link.click();
-                        downloadBtn.innerHTML = '<span>✅</span><span>Download iniciado!</span>';
-                        downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-success), var(--accent-cyan))';
-                        console.log('Download do CV iniciado com sucesso');
-                    } else {
-                        // Arquivo não encontrado - tentar alternativas
-                        console.log('Arquivo não encontrado, tentando alternativas...');
-                        tentarDownloadAlternativo(downloadBtn, originalText);
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro ao verificar arquivo:', error);
-                    tentarDownloadAlternativo(downloadBtn, originalText);
-                })
-                .finally(() => {
-                    // Limpar o link após um tempo
-                    setTimeout(() => {
-                        try {
-                            document.body.removeChild(link);
-                        } catch (e) {
-                            console.log('Link já removido');
-                        }
-                    }, 2000);
-                    
-                    // Resetar botão
-                    setTimeout(() => {
-                        downloadBtn.innerHTML = originalText;
-                        downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-success), var(--accent-cyan))';
-                    }, 3000);
-                });
-        }
-        
-        function tentarDownloadAlternativo(downloadBtn, originalText) {
-            // Tentar diferentes caminhos
-            const alternativas = [
-                'curriculo%20de%20carlos%20costato.pdf',
-                './curriculo de carlos costato.pdf',
-                './curriculo%20de%20carlos%20costato.pdf'
-            ];
-            
-            let tentativas = 0;
-            
-            function tentarProximaAlternativa() {
-                if (tentativas >= alternativas.length) {
-                    // Todas as tentativas falharam
-                    downloadBtn.innerHTML = '<span>❌</span><span>Arquivo não encontrado</span>';
-                    downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-error), var(--accent-warning))';
-                    console.error('Todas as alternativas de download falharam');
-                    return;
-                }
+            try {
+                link.click();
+                console.log('Download do CV iniciado com sucesso');
                 
-                const alternativa = alternativas[tentativas];
-                tentativas++;
+                // Feedback visual
+                const downloadBtn = document.querySelector('.download-btn');
+                const originalText = downloadBtn.innerHTML;
+                downloadBtn.innerHTML = '<span>✅</span><span>Download Iniciado!</span>';
+                downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-success), var(--accent-cyan))';
                 
-                const link = document.createElement('a');
-                link.href = alternativa;
-                link.download = 'Carlos_Costato_CV.pdf';
-                link.style.display = 'none';
-                document.body.appendChild(link);
+                setTimeout(() => {
+                    downloadBtn.innerHTML = originalText;
+                }, 2000);
                 
-                fetch(alternativa, {method: 'HEAD'})
-                    .then(response => {
-                        if (response.ok) {
-                            link.click();
-                            downloadBtn.innerHTML = '<span>✅</span><span>Download iniciado!</span>';
-                            downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-success), var(--accent-cyan))';
-                            console.log(`Download iniciado com alternativa: ${alternativa}`);
-                        } else {
-                            // Tentar próxima alternativa
-                            document.body.removeChild(link);
-                            tentarProximaAlternativa();
-                        }
-                    })
-                    .catch(() => {
-                        // Tentar próxima alternativa
-                        try {
-                            document.body.removeChild(link);
-                        } catch (e) {}
-                        tentarProximaAlternativa();
-                    });
+            } catch (error) {
+                console.error('Erro ao fazer download do CV:', error);
+                
+                // Feedback de erro
+                const downloadBtn = document.querySelector('.download-btn');
+                const originalText = downloadBtn.innerHTML;
+                downloadBtn.innerHTML = '<span>❌</span><span>Erro no Download</span>';
+                downloadBtn.style.background = 'linear-gradient(135deg, var(--accent-error), var(--accent-warning))';
+                
+                setTimeout(() => {
+                    downloadBtn.innerHTML = originalText;
+                }, 3000);
+            } finally {
+                // Limpeza do link
+                document.body.removeChild(link);
             }
-            
-            tentarProximaAlternativa();
         }
 
         // Pausar leitura com tecla ESC
