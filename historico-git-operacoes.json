@@ -1,6 +1,6 @@
 [
   {
-    "data_operacao": "2026-05-03 19:51:39",
+    "data_operacao": "2026-05-03 19:54:36",
     "especialistas": [
       "Gabriel Silva",
       "Mariana Costa"
@@ -13,7 +13,9 @@
         "detalhes": {
           "branch_atual": "main",
           "arquivos_modificados": [
-            "portfolio.html"
+            "historico-git-operacoes.json",
+            "portfolio.html",
+            "relatorio-git-operacao.txt"
           ],
           "arquivos_novos": [],
           "arquivos_nao_rastreados": [],
@@ -26,7 +28,9 @@
         "status": "SUCESSO",
         "detalhes": {
           "arquivos_para_commit": [
-            "portfolio.html"
+            "historico-git-operacoes.json",
+            "portfolio.html",
+            "relatorio-git-operacao.txt"
           ],
           "arquivos_ignorados": [],
           "status": "OK"
@@ -40,7 +44,9 @@
           "status": "SUCESSO",
           "mensagem": "Commit realizado com sucesso",
           "arquivos_commitados": [
-            "portfolio.html"
+            "historico-git-operacoes.json",
+            "portfolio.html",
+            "relatorio-git-operacao.txt"
           ],
           "arquivos_ignorados": []
         }
