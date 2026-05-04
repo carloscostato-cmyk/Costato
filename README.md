@@ -4,9 +4,11 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-costato/)
 [![SharePoint](https://img.shields.io/badge/SharePoint-Expert-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
 [![Power Apps](https://img.shields.io/badge/Power_Apps-Advanced-722271?style=for-the-badge&logo=microsoft&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
+[![AI & ML](https://img.shields.io/badge/AI_&_ML-Gemini_API-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
+[![Python Automation](https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
 [![Open to Work](https://img.shields.io/badge/Open_to_Work-Senior_IT_Roles-green?style=for-the-badge&logo=workplace&logoColor=white)](mailto:carlos.costato@gmail.com)
 
-> **🔒 Enterprise SharePoint & Power Apps Specialist** | 15+ Projetos Entregues | Claro | Porto Seguro | GlobalHitss | **Available for Opportunities**
+> **🤖 Enterprise SharePoint & AI Specialist** | 15+ Projetos Entregues | Claro | Porto Seguro | GlobalHitss | **Available for Opportunities**
 
 ## 🌐 Portfólio Profissional
 
@@ -19,14 +21,16 @@
 - **📧 Contato Direto:** [Formulário Profissional](https://carloscostato-cmyk.github.io/Costato/contact.html)
 
 ### 🎯 Áreas de Atuação
+- **🤖 Inteligência Artificial** - Google Gemini API, agentes autônomos, parsing de currículos
 - **🏢 SharePoint Enterprise** - Portais corporativos (29 bibliotecas, 38 listas, 68 páginas)
 - **⚡ Power Apps & Power Automate** - Automações e soluções low-code
 - **🔒 Cybersecurity & Governance** - Frameworks de segurança e compliance  
 - **📊 Business Intelligence** - Dashboards Power BI para diretoria
-- **🤖 Inteligência Artificial** - Modelos generativos e automação
 - **⚙️ RPA & Automação** - Processos automatizados e eficiência operacional
 
-### 🏆 Projetos Enterprise Destaque
+### 🏆 Projetos Enterprise & IA Destaque
+- **🤖 Doutor em RH (Agente Autônomo)** - Sistema 24/7 com GitHub Actions e Telegram API
+- **🧠 Sr. OSvaldo (Google Gemini AI)** - Agente de parsing e análise de currículos
 - **🔐 Portal Cyber Security (Claro/GlobalHitss)** - 29 bibliotecas, 38 listas, sistema de certificações
 - **🖥️ Portal Data Center SD (Claro/GlobalHitss)** - Gestão de 7 data centers, 11 bibliotecas, 23 listas
 - **🚗 Vitrinni Centro Automotivo** - Site completo com sistema de agendamento e gestão de serviços
