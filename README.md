@@ -1,11 +1,12 @@
-# 🚀 Carlos Costato | Senior IT Project Manager & AI Specialist
+# 🚀 Carlos Costato | Senior IT Project Manager | SharePoint Specialist
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-00f2fe?style=for-the-badge&logo=github&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/)
-[![Version 2.0](https://img.shields.io/badge/Version-2.0-purple?style=for-the-badge&logo=react&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/ver2.html)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-costato/)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:carlos.costato@gmail.com)
+[![SharePoint](https://img.shields.io/badge/SharePoint-Expert-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
+[![Power Apps](https://img.shields.io/badge/Power_Apps-Advanced-722271?style=for-the-badge&logo=microsoft&logoColor=white)](https://carloscostato-cmyk.github.io/Costato/portfolio.html)
+[![Open to Work](https://img.shields.io/badge/Open_to_Work-Senior_IT_Roles-green?style=for-the-badge&logo=workplace&logoColor=white)](mailto:carlos.costato@gmail.com)
 
-> **Enterprise IT Leadership & AI Innovation** | 15+ Anos de Experiência | Cybersecurity & Governance Specialist
+> **🔒 Enterprise SharePoint & Power Apps Specialist** | 15+ Projetos Entregues | Claro | Porto Seguro | GlobalHitss | **Available for Opportunities**
 
 ## 🌐 Portfólio Profissional
 
@@ -18,11 +19,17 @@
 - **📧 Contato Direto:** [Formulário Profissional](https://carloscostato-cmyk.github.io/Costato/contact.html)
 
 ### 🎯 Áreas de Atuação
-- **🔒 Cybersecurity & Governance** - Frameworks de segurança e compliance
+- **🏢 SharePoint Enterprise** - Portais corporativos (29 bibliotecas, 38 listas, 68 páginas)
+- **⚡ Power Apps & Power Automate** - Automações e soluções low-code
+- **🔒 Cybersecurity & Governance** - Frameworks de segurança e compliance  
 - **📊 Business Intelligence** - Dashboards Power BI para diretoria
 - **🤖 Inteligência Artificial** - Modelos generativos e automação
-- **🏢 SharePoint Enterprise** - Portais corporativos e gestão documental
 - **⚙️ RPA & Automação** - Processos automatizados e eficiência operacional
+
+### 🏆 Projetos Enterprise Destaque
+- **🔐 Portal Cyber Security (Claro/GlobalHitss)** - 29 bibliotecas, 38 listas, sistema de certificações
+- **🖥️ Portal Data Center SD (Claro/GlobalHitss)** - Gestão de 7 data centers, 11 bibliotecas, 23 listas
+- **🚗 Vitrinni Centro Automotivo** - Site completo com sistema de agendamento e gestão de serviços
 
 ### 📋 Páginas do Site
 - `index.html` — Landing page com métricas executivas
