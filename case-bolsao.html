@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Case | Sistema de Controle de Licenças Fortinet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .case-tech-badge {
+      display: inline-block;
+      background: rgba(0, 242, 255, 0.1);
+      color: var(--accent-cyan);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 0.2rem;
+    }
+    .case-metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .metric-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 0.3rem;
+    }
+    .metric-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .screenshot-placeholder {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      background: linear-gradient(135deg, rgba(0, 242, 255, 0.05), rgba(112, 0, 255, 0.05));
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .screenshot-placeholder::before {
+      content: "📊 Dashboard do Sistema";
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      text-align: center;
+      padding: 1rem;
+    }
+    .screenshot-placeholder::after {
+      content: "Bolsão de Pontos Fortinet";
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">CARLOS COSTATO</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Atuação</a>
+        <a href="experience.html">Experiência</a>
+        <a href="portfolio.html" aria-current="page">Projetos</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container case-layout">
+    <section class="page-hero">
+      <span class="tag" style="margin-bottom: 1rem; display: inline-block;">Infraestrutura & Automação</span>
+      <h1>Sistema de Controle de Licenças Fortinet</h1>
+      <p>Plataforma web para gestão, controle de consumo e conciliação de licenças Fortinet baseadas em pontos. Automatiza o rastreamento de Point Packs, equipamentos FortiGate e cruzamento com base oficial da fabricante.</p>
+      <div style="margin-top: 1.5rem;">
+        <span class="case-tech-badge">Python 3.14</span>
+        <span class="case-tech-badge">Flask 3.0</span>
+        <span class="case-tech-badge">SQLite (WAL)</span>
+        <span class="case-tech-badge">openpyxl</span>
+        <span class="case-tech-badge">Gunicorn</span>
+        <span class="case-tech-badge">Render.com</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contexto</h2>
+      <p>Uma grande operadora de telecomunicações (Claro) gerencia suas licenças Fortinet através de um sistema de <strong>pontos (Point Packs)</strong>. O controle manual vinha gerando problemas de rastreabilidade, divergências entre o consumo registrado internamente e a base oficial da Fortinet, além de dificuldade para conciliar e auditar os gastos.</p>
+
+      <h2>Desafio</h2>
+      <ul>
+        <li><strong>Visibilidade:</strong> Não havia um dashboard consolidado por grupo (Responsável + Projeto) mostrando pontos totais, consumidos e saldo.</li>
+        <li><strong>Conciliação manual:</strong> O processo de cruzar a base oficial da Fortinet (.xlsx) com os registros internos era feito em planilhas, sujeito a erros.</li>
+        <li><strong>Rastreabilidade:</strong> Dificuldade para saber em qual equipamento (FortiGate) e cliente os pontos estavam sendo alocados.</li>
+        <li><strong>Auditoria:</strong> Sem histórico confiável de consumo por serial number e data.</li>
+      </ul>
+
+      <h2>Solução Implementada</h2>
+      <p>Desenvolvi uma aplicação web completa em Python/Flask com as seguintes funcionalidades:</p>
+
+      <ul>
+        <li><strong>Dashboard executivo:</strong> Visão consolidada por grupo (Responsável + Projeto) com pontos totais, consumidos, saldo e percentual de utilização.</li>
+        <li><strong>Cadastro de Point Packs:</strong> Registro de pacotes de pontos adquiridos com data de expiração, responsável e projetos vinculados.</li>
+        <li><strong>Registro de equipamentos:</strong> Cadastro de equipamentos FortiGate com cálculo automático de consumo diário baseado no modelo e serial number.</li>
+        <li><strong>Conciliação automática:</strong> Upload da base oficial Fortinet (.xlsx) e cruzamento automático por Serial Number, calculando diferenças entre pontos calculados e pontos oficiais.</li>
+        <li><strong>Autenticação segura:</strong> Login protegido com senha, sessão Flask e proteção contra SQL injection.</li>
+      </ul>
+
+      <div class="case-metrics">
+        <div class="metric-card">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Rastreabilidade de Consumo</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Zero</div>
+          <div class="metric-label">Planilhas Manuais</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Automático</div>
+          <div class="metric-label">Cruzamento com Base Oficial</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Seguro</div>
+          <div class="metric-label">Autenticação + SQL Injection Protection</div>
+        </div>
+      </div>
+
+      <h2>Arquitetura Técnica</h2>
+      <pre style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px; overflow-x: auto; font-size: 0.9rem; line-height: 1.6;">
+sistema_py/
+├── app.py                 # Rotas, lógica principal e autenticação (Flask)
+├── wsgi.py                # Entry point para produção (Gunicorn)
+├── Procfile               # Configuração de deploy (gunicorn app:app)
+├── requirements.txt       # Dependências Python
+├── sistema.db             # Banco de dados SQLite (WAL mode)
+├── static/
+│   └── claro.css          # Estilos globais
+└── templates/
+    ├── login.html         # Tela de login
+    ├── index.html         # Dashboard
+    ├── pontos_bolsao.html # Listagem de Point Packs
+    ├── novo_bolsao.html   # Formulário de novo bolsão
+    ├── pontos_utilizados.html # Listagem de equipamentos
+    ├── novo_ponto_utilizado.html # Formulário de novo consumo
+    └── conciliacao.html   # Upload e resultado da conciliação</pre>
+
+      <h2>Banco de Dados</h2>
+      <p>SQLite com WAL mode para concorrência, composto por 3 tabelas principais:</p>
+      <ul>
+        <li><strong>pontos_bolsao</strong> — Pacotes de pontos adquiridos (Point Packs) com responsável, projeto e datas</li>
+        <li><strong>pontos_utilizados</strong> — Equipamentos FortiGate com serial number, modelo e custo diário</li>
+        <li><strong>base_conciliacao</strong> — Base oficial Fortinet para cruzamento</li>
+      </ul>
+
+      <h2>Segurança</h2>
+      <ul>
+        <li>Todas as rotas protegidas com <code>@login_required</code></li>
+        <li>Queries parametrizadas — proteção contra SQL injection</li>
+        <li>Secret key configurada para proteção de sessão Flask</li>
+        <li>WAL mode no SQLite — evita travamentos em produção</li>
+      </ul>
+
+      <h2>Resultados</h2>
+      <ul>
+        <li>Eliminação completa de planilhas manuais para controle de licenças</li>
+        <li>Conciliação automática com base oficial Fortinet em segundos</li>
+        <li>Dashboard em tempo real com visibilidade por equipe e projeto</li>
+        <li>Rastreabilidade completa desde o Point Pack até o equipamento individual</li>
+        <li>Deploy automatizado no Render.com via GitHub Actions</li>
+      </ul>
+
+      <h2>Papel de Carlos Costato</h2>
+      <p>Desenvolvimento full-stack completo: arquitetura do sistema, modelagem do banco de dados, implementação das rotas Flask, desenvolvimento do frontend responsivo, lógica de conciliação, deploy e manutenção em produção.</p>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a class="btn primary" href="https://bolsao.onrender.com" target="_blank">Acessar Sistema (Produção)</a>
+        <a class="btn ghost" href="https://github.com/carloscostato-cmyk/Bolsao" target="_blank">Repositório GitHub</a>
+        <a class="btn ghost" href="portfolio.html">← Voltar para Projetos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Contato: carlos.costato@gmail.com</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5511986395283" target="_blank" rel="noopener" title="Falar no WhatsApp">
+    <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
+  </a>
+</body>
+</html>
